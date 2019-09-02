@@ -18,25 +18,25 @@ Praktikum kali ini berisi tentang cara Penjelasan Inheritance beserta contoh pen
 Sepeda.java
 
     Membuat class sepeda
-![contoh screenshot](img/1-praktikum1.PNG)
+![contoh screenshot](img/1-praktikum1.png)
 
-![contoh screenshot](img/1-praktikum1project.PNG)
+![contoh screenshot](img/1-praktikum1project.png)
 
-![contoh screenshot](img/1-praktikum1sourcecode.PNG)
+![contoh screenshot](img/1-praktikum1sourcecode.png)
 
 link kode program Sepeda.java : [Sepeda.java](../../src/1_Pengantar_Konsep_PBO/Sepeda1841720099Rafi.java)
 
 SepedaDemo.java
 
 Source Code :
-![contoh screenshot](img/2-praktikum1full.PNG)
+![contoh screenshot](img/2-praktikum1full.png)
 
 
-![contoh screenshot](img/2-praktikum1sourcecode.PNG)
+![contoh screenshot](img/2-praktikum1sourcecode.png)
 
 Hasil kompilasi :
 
-![contoh screenshot](img/2-praktikum1hasil.PNG)
+![contoh screenshot](img/2-praktikum1hasil.png)
 
 link kode program SepedaDemo.java : [SepedaDemo.java](../../src/1_Pengantar_Konsep_PBO/SepedaDemo1841720099Rafi.java)
 
@@ -44,21 +44,21 @@ link kode program SepedaDemo.java : [SepedaDemo.java](../../src/1_Pengantar_Kons
 
 Sepeda Gunung extend Sepeda
 
-![contoh screenshot](img/3-praktikum2extend.PNG)
+![contoh screenshot](img/3-praktikum2extend.png)
 
 Source Code Sepeda Gunung
 
-![contoh screenshot](img/3-praktikum2source.PNG)
+![contoh screenshot](img/3-praktikum2source.png)
 
 link kode program SepedaGunung.java : [SepedaGunung.java](../../src/1_Pengantar_Konsep_PBO/SepedaGunung1841720099Rafi.java)
 
 Source Sepeda Demo Main
 
-![contoh screenshot](img/3-praktikum2main.PNG)
+![contoh screenshot](img/3-praktikum2main.png)
 
 Hasil
 
-![contoh screenshot](img/3-praktikum2hasil.PNG)
+![contoh screenshot](img/3-praktikum2hasil.png)
 
 ## Pertanyaan
 
@@ -95,7 +95,7 @@ nol
   
 4. mSetMerek, mGantiGear, mTambahKecepatan, mRem, mCetakStatus
 5. Attribut Warna
-![contoh screenshot](img/setwarna.PNG)
+![contoh screenshot](img/setwarna.png)
 6. Karena Attribut dari Sepeda Gunung adalah turunan dari attribut Sepeda jadi tidak perlu membuat class dari nol, hanya memanggil Class Sepeda dengan menggunakan extend dan menambahkan attribut tambahan untuk sepeda gunung 
 
 
@@ -105,13 +105,13 @@ Dokter
 
     Project files
 
-![contoh screenshot](img/tugasfileprojek.PNG)
+![contoh screenshot](img/tugasfileprojek.png)
 
     Source Code 
 
-![contoh screenshot](img/tugasdokterfull.PNG)
+![contoh screenshot](img/tugasdokterfull.png)
 
-![contoh screenshot](img/tugasdoktersource.PNG)
+![contoh screenshot](img/tugasdoktersource.png)
 
 link kode program dokter.java : [Dokter.java](../../src/1_Pengantar_Konsep_PBO/Dokter1841720099Rafi.java)
 
@@ -119,9 +119,9 @@ Dokter Spesialis
 
     Source Code 
 
-![contoh screenshot](img/tugasdokterSpesialisfull.PNG)
+![contoh screenshot](img/tugasdokterSpesialisfull.png)
 
-![contoh screenshot](img/tugasdokterspesialissource.PNG)
+![contoh screenshot](img/tugasdokterspesialissource.png)
 
 link kode program dokterSpesialis.java : [DokterSpesialis.java](../../src/1_Pengantar_Konsep_PBO/DokterSpesialis1841720099Rafi.java)
 
@@ -129,14 +129,14 @@ Main
 
     Source Code 
 
-![contoh screenshot](img/tugasdoktermainfull.PNG)
+![contoh screenshot](img/tugasdoktermainfull.png)
 
-![contoh screenshot](img/tugasdoktermainsource.PNG)
+![contoh screenshot](img/tugasdoktermainsource.png)
 
 link kode program dokterMain.java : [DokterMain.java](../../src/1_Pengantar_Konsep_PBO/DokterMain1841720099Rafi.java)
 
     hasil kompile
-![contoh screenshot](img/tugasdokterhasil.PNG)
+![contoh screenshot](img/tugasdokterhasil.png)
 
 ## Kesimpulan
 
