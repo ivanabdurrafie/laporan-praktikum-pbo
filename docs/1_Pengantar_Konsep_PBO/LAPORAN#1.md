@@ -119,7 +119,7 @@ Dokter Spesialis
 
     Source Code 
 
-![contoh screenshot](img/tugasdokterSpesialisfull.png)
+![contoh screenshot](img/tugasdokterspesialisfull.png)
 
 ![contoh screenshot](img/tugasdokterspesialissource.png)
 
