@@ -22,7 +22,7 @@ Sepeda.java
 
 ![contoh screenshot](img/1-praktikum1project.png)
 
-![contoh screenshot](img/1-praktikum1sourcecode.png)
+![contoh screenshot](img/1-praktikum1sourceCode.png)
 
 link kode program Sepeda.java : [Sepeda.java](../../src/1_Pengantar_Konsep_PBO/Sepeda1841720099Rafi.java)
 
