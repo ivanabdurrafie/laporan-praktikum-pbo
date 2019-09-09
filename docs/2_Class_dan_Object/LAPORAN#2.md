@@ -12,6 +12,37 @@
 
 ## Ringkasan Materi
 
+Kita bisa memanggil class induk pada class grandchild dengan cara super
+
+Class Parent
+
+![contoh screenshot](img/mKakek.png)
+
+link kode program Kakek.java : [Kakek.java](../../src/2_Class_dan_Object/ringkasan/Kakek.java)
+
+Class Child
+
+![contoh screenshot](img/mAyah.png)
+
+link kode program Ayah.java : [Ayah.java](../../src/2_Class_dan_Object/ringkasan/Ayah.java)
+
+Class grandchild
+
+![contoh screenshot](img/mAnak.png)
+
+link kode program Anak.java : [Anak.java](../../src/2_Class_dan_Object/ringkasan/Anak.java)
+
+Class Main
+
+![contoh screenshot](img/mMain.png)
+
+link kode program Main.java : [Main.java](../../src/2_Class_dan_Object/ringkasan/AnakMain.java)
+
+Hasil
+
+![contoh screenshot](img/mHasil.png)
+
+
  
 ## Percobaan
 
@@ -49,80 +80,134 @@ link kode program Mahasiswa.java : [Mahasiswa.java](../../src/2_Class_dan_Object
 link kode program Mahasiswa.java : [MahasiswaMain.java](../../src/2_Class_dan_Object/MahasiswaMain1841720099Rafi.java)
 
 
+### Percobaan 3
+
+    Barang
+
+![contoh screenshot](img/3barangfull.png)
+
+![contoh screenshot](img/3barangproject.png)
+
+![contoh screenshot](img/3barangsource.png)
+
+link kode program Barang.java : [Barang.java](../../src/2_Class_dan_Object/Barang1841720099Rafi.java)
+
+    Barang Main
+
+![contoh screenshot](img/3barangmainfull.png)
+
+![contoh screenshot](img/3barangmainsource.png)
+
+    Hasil
+![contoh screenshot](img/3baranghasil.png)
+
+link kode program Barang Main.java : [BarangMain.java](../../src/2_Class_dan_Object/BarangMain1841720099Rafi.java)
+
 ## Pertanyaan
 
 1. Apakah fungsi argumen dalam suatu method?
 2. Ambil kesimpulan tentang kegunaan dari kata kunci return , dan kapan suatu method
 harus memiliki return!
 
-### Jawab
+## Jawaban
 
-1. Aspek aspek OOP :
-
- | Nama          | Penjelasan |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Object        | Suatu rangkaian yang dalam program yang terdiri dari state dan behaviour. |
-|  Class        | Sebuah blueprint atau prototype sebuah project.|
-|  Abstraction  | Kemampuan sebuah program untuk melewati aspek informasi yang diproses  olehnya, yaitu kemampuan untuk memfokus pada inti. Setiap objek dalam  sistem melayani sebagai model dari "pelaku" abstrak yang dapat melakukan  kerja, laporan dan perubahan keadaannya, dan berkomunikasi dengan objek  lainnya dalam sistem, tanpa mengungkapkan bagaimana kelebihan ini  diterapkan. Proses, fungsi atau metode dapat juga dibuat abstrak, dan  beberapa teknik digunakan untuk mengembangkan sebuah pengabstrakan.|
-| Encapsulation | Memastikan pengguna sebuah objek tidak dapat mengganti keadaan dalam dari sebuah objek dengan cara yang tidak layak hanya metode dalam objek tersebut yang diberi izin untuk mengakses keadaannya.|
-| Polimorphism  | Sebuah turunan yang bisa memiliki banyak bentuk dapat digunakan untuk turunan yang memiliki jenis yang berbeda|
-| Inheritance   | Sebuah pewarisan atau penurunan. digunakan untuk mengurangi penggunaan method yang sama,memperluas fungsionalitas program tanpa harus mengubah banyak bagian program. |
-2. Class merupakan sebuah blueprint atau prototype dari sebuah projek yang dibuat untuk tujuan tertentu
-
-    sedangkan object adalah pemanfaatan dari class yang siap untuk digunakan yang menjadi satu rangkaian program
-
-3. - Penggunaan kembali fungsi yang ada menggunakan inheritance, lebih efisien
-   - Mudah untuk pemeliharaan karena dengan OOP dapat model dapat dipisahkan sesuai yang diinginkan, tidak perlu merubah semua code hanya beberapa yang dibutuhkan saja
-   - Class dan object bisa digunakan lagi atau Reusable
-  
-4. mSetMerek, mGantiGear, mTambahKecepatan, mRem, mCetakStatus
-5. Attribut Warna
-![contoh screenshot](img/setwarna.png)
-6. Karena Attribut dari Sepeda Gunung adalah turunan dari attribut Sepeda jadi tidak perlu membuat class dari nol, hanya memanggil Class Sepeda dengan menggunakan extend dan menambahkan attribut tambahan untuk sepeda gunung 
-
+1. Kegunaan arguman dalam suatu method adalah memberikan sebuah nilai yang harus dieksekusi oleh suatu method tersebut.
+2.  Return adalah method yang mengembalikan nilai secara langsung atau sebuah nilai dari variable, ketika suatu method memiliki tipe data. Seperti int,double,float dll.
 
 ## Tugas
 
-Dokter
+### Tugas 1
 
-    Project files
+Class Diagram Peminjaman video Game
 
-![contoh screenshot](img/tugasfileprojek.png)
+![contoh screenshot](img/t1diagram.png)
 
-    Source Code 
+### tugas 2
+#### Peminjaman Video Game
 
-![contoh screenshot](img/tugasdokterfull.png)
+![contoh screenshot](img/t2project.png)
 
-![contoh screenshot](img/tugasdoktersource.png)
+Source
 
-link kode program dokter.java : [Dokter.java](../../src/1_Pengantar_Konsep_PBO/Dokter1841720099Rafi.java)
+![contoh screenshot](img/t2full.png)
 
-Dokter Spesialis
+![contoh screenshot](img/t2peminjaman.png)
 
-    Source Code 
+link kode program Peminjaman.java : [Peminjaman.java](../../src/2_Class_dan_Object/Peminjaman1841720099Rafi.java)
 
-![contoh screenshot](img/tugasdokterspesialisfull.png)
+##### Peminjaman Main
 
-![contoh screenshot](img/tugasdokterspesialissource.png)
+Source
 
-link kode program dokterSpesialis.java : [DokterSpesialis.java](../../src/1_Pengantar_Konsep_PBO/DokterSpesialis1841720099Rafi.java)
+![contoh screenshot](img/t2mainfull.png)
 
-Main
+![contoh screenshot](img/t2main.png)
 
-    Source Code 
+Hasil 
 
-![contoh screenshot](img/tugasdoktermainfull.png)
+![contoh screenshot](img/t2hasil.png)
 
-![contoh screenshot](img/tugasdoktermainsource.png)
+link kode program Peminjaman Main.java : [PeminjamanMain.java](../../src/2_Class_dan_Object/PeminjamanMain1841720099Rafi.java)
 
-link kode program dokterMain.java : [DokterMain.java](../../src/1_Pengantar_Konsep_PBO/DokterMain1841720099Rafi.java)
+### tugas 3
 
-    hasil kompile
-![contoh screenshot](img/tugasdokterhasil.png)
+#### Lingkaran
+
+![contoh screenshot](img/t3project.png)
+
+Source
+
+![contoh screenshot](img/t3full.png)
+
+![contoh screenshot](img/t3lingkaran.png)
+
+link kode program Lingkaran.java : [Lingkaran.java](../../src/2_Class_dan_Object/Lingkaran1841720099Rafi.java)
+
+##### Lingkaran Main
+
+Source
+
+![contoh screenshot](img/t3mainfull.png)
+
+![contoh screenshot](img/t3main.png)
+
+Hasil 
+
+![contoh screenshot](img/t3hasil.png)
+
+link kode program Lingkaran Main.java : [LingkaranMain.java](../../src/2_Class_dan_Object/PeminjamanMain1841720099Rafi.java)
+
+### tugas 4
+
+#### Barang
+
+![contoh screenshot](img/t4project.png)
+
+Source
+
+![contoh screenshot](img/t4full.png)
+
+![contoh screenshot](img/t4barang.png)
+
+link kode program Barang.java : [Barang.java](../../src/2_Class_dan_Object/TBarang1841720099Rafi.java)
+
+##### Barang Main
+
+Source
+
+![contoh screenshot](img/t4mainfull.png)
+
+![contoh screenshot](img/t4main.png)
+
+Hasil 
+
+![contoh screenshot](img/t4hasil.png)
+
+link kode program Barang Main.java : [BarangMain.java](../../src/2_Class_dan_Object/TBarangMain1841720099Rafi.java)
 
 ## Kesimpulan
 
-Dengan menggunakan **Inheritance** kita dapat meminimalisir duplikasi kode dan method dapat digunakan kembali sesuai kebutuhan
+Dengan menggambarkan class diagram mempermudah kita untuk merancang sebuah program. Dengan Menggunakan Object kita dapat mencegah pengulangan data yang sama. 
 
 ## Pernyataan Diri
 
