@@ -9,7 +9,7 @@ package com.mycompany.gerbong1841720099rafi;
  *
  * @author Ivan Abdurrafie
  */
-public class Main1841720099Rafi {
+public class MainGerbong1841720099Rafi {
 
     public static void main(String[] args) {
         Penumpang1841720099Rafi p = new Penumpang1841720099Rafi("11111", "Ivan Abdurrafie");

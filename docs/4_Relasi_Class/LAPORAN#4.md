@@ -6,7 +6,7 @@ Setelah menempuh pokok bahasan ini, mahasiswa mampu:
 2. Mengimplementasikan relasi has‑a dalam program.
 
 ## Ringkasan Materi
-Melakukan praktikum Relasi kelas ini kita belajar cara membuat class yang ber relasi satu dengan class lain dengan memanggil suatu objek
+Melakukan praktikum Relasi kelas ini kita belajar cara membuat class yang ber relasi satu dengan class lain dengan memanggil suatu objek dengan menggunakan constructor dan method getter and setter serta mengimplementasikan Class diagram kedalam program 
 
 
 
@@ -296,111 +296,205 @@ System.out.println(keretaApi.info());
 
 ##### Relasi Kelas gerbong, penumpang dan kursi berdasarkan UML 
 
-![contoh screenshot](img/p3uml.png)
+![contoh screenshot](img/p4uml.png)
 
-##### Class Pegawai
-
-###### Source code
-
-![contoh screenshot](img/p3pegawaifull1.png)
-
-![contoh screenshot](img/p3pegawaifull2.png)
-
-![contoh screenshot](img/p3pegawai1.png)
-
-###### Link code 
-
-link kode program Pegawai.java : [Pegawai.java](../../src/4_Relasi_Class/Pegawai1841720099Rafi.java)
-
-##### Class Kereta Api
+##### Class Penumpang
 
 ###### Source code
 
-![contoh screenshot](img/p3keretaapifull1.png)
+![contoh screenshot](img/p4penumpangfull1.png)
 
-![contoh screenshot](img/p3keretaapifull2.png)
+![contoh screenshot](img/p4penumpangfull2.png)
 
-![contoh screenshot](img/p3keretaapifull3.png)
-
-![contoh screenshot](img/p3keretaapifull4.png)
-
-![contoh screenshot](img/p3keretaapi1.png)
-
-![contoh screenshot](img/p3keretaapi2.png)
+![contoh screenshot](img/p4penumpang1.png)
 
 ###### Link code 
 
-link kode program KeretaApi.java : [KeretaApi.java](../../src/4_Relasi_Class/KeretaApi1841720099Rafi.java)
+link kode program Penumpang.java : [Penumpang.java](../../src/4_Relasi_Class/Penumpang1841720099Rafi.java)
+
+##### Class Kursi
+
+###### Source code
+
+![contoh screenshot](img/p4kursifull1.png)
+
+![contoh screenshot](img/p4kursifull2.png)
+
+![contoh screenshot](img/p4kursi.png)
+
+
+###### Link code 
+
+link kode program Kursi.java : [kursi.java](../../src/4_Relasi_Class/Kursi1841720099Rafi.java)
+
+##### Class Gerbong
+
+###### Source code
+
+![contoh screenshot](img/p4gerbongfull1.png)
+
+![contoh screenshot](img/p4gerbongfull2.png)
+
+![contoh screenshot](img/p4gerbongfull3.png)
+
+![contoh screenshot](img/p4gerbong1.png)
+
+![contoh screenshot](img/p4gerbong2.png)
+
+###### Link code 
+
+link kode program Gerbong.java : [Gerbong.java](../../src/4_Relasi_Class/Gerbong1841720099Rafi.java)
 
 ##### Main
 
 ###### Source code 
 
-![contoh screenshot](img/p3mainfull.png)
+![contoh screenshot](img/p4mainfull.png)
 
-![contoh screenshot](img/p3main.png)   
+![contoh screenshot](img/p4main.png)   
 
 ###### Link code 
 
-link kode program Main.java : [Main.java](../../src/4_Relasi_Class/MainKereta1841720099Rafi.java)
+link kode program Main.java : [Main.java](../../src/4_Relasi_Class/MainGerbong1841720099Rafi.java)
 
 
 ##### Hasil
 
-![contoh screenshot](img/p3hasil.png)
+![contoh screenshot](img/p4hasil.png)
 
 ##### Pertanyaan
 
-1. Di dalam method info() pada class KeretaApi, baris this.masinis.info() dan
-this.asisten.info() digunakan untuk apa ?
-2. Buatlah main program baru dengan nama class MainPertanyaan pada package yang
-sama. Tambahkan kode berikut pada method main() !
-Pegawai masinis = new Pegawai("1234", "Spongebob
-Squarepants");
-KeretaApi keretaApi = new KeretaApi("Gaya Baru", "Bisnis",
-masinis);
-System.out.println(keretaApi.info());
-3. Apa hasil output dari main program tersebut ? Mengapa hal tersebut dapat terjadi ?
-4. Perbaiki class KeretaApi sehingga program dapat berjalan !
+1. Pada main program dalam class MainPercobaan4, berapakah jumlah kursi dalam
+Gerbong A ?
+2. Perhatikan potongan kode pada method info() dalam class Kursi. Apa maksud kode
+tersebut ?
+...
+if (this.penumpang != null) {
+info += "Penumpang: " + penumpang.info() + "\n";
+}
+...
+3. Mengapa pada method setPenumpang() dalam class Gerbong, nilai nomor dikurangi
+dengan angka 1 ?
+4. Instansiasi objek baru budi dengan tipe Penumpang, kemudian masukkan objek baru
+tersebut pada gerbong dengan gerbong.setPenumpang(budi, 1). Apakah yang
+terjadi ?
+5. Modifikasi program sehingga tidak diperkenankan untuk menduduki kursi yang sudah ada
+penumpang lain !
 
 ##### Jawaban
 
-1. untuk menampilkan info pada method masinis dan info pada method asisten
-2. membuat main program baru
-![contoh screenshot](img/p3pertanyaan2.png)
-3. terjadi sebuah error null pointer exception karena pada assisten tidak terisi
- ![contoh screenshot](img/p3pertanyaan.png)
- 4. menggunakan statement if pada kereta.info, jika data assisten ditambahkan maka akan ditampilkan jika tidak maka data assisten tidak ditampilkan
-![contoh screenshot](img/p3pertanyaan3.png)
+1. jumlah kursi dalam gerbong A adalah 10
+2. pada source tersebut info penumpang akan ditampilkan jika value penumpang tidak kosong, jika kosong maka tidak akan menampilkan info penumpang tersebut
+3. karena pada array dimulai dari angka 0
+4. Pada kursi nomor satu penumpang akan berubah menjadi budi karena data tertimpa
+5. modifikasi source program
+![contoh screenshot](img/p4pertanyaan.png)
 
 
 ## Tugas
 
 ### Tugas 1
 
-Membuat class Encapsulasi
+##### Relasi Kelas dengan Studi Kasus Toko
 
-![contoh screenshot](img/t1encapfull.png)
+![contoh screenshot](img/t1uml.png)
 
-![contoh screenshot](img/t1encapfull2.png)
+##### Class Anggota
 
-![contoh screenshot](img/t1encap.png)
+###### Source code
 
-Membuat class main
+![contoh screenshot](img/t1anggotafull.png)
 
-![contoh screenshot](img/t1encapmainfull.png)
+![contoh screenshot](img/t1anggotafull2.png)
 
-![contoh screenshot](img/t1encapmain.png)
+![contoh screenshot](img/t1anggotafull3.png)
 
-Hasil 
+![contoh screenshot](img/t1anggotafull4.png)
 
-![contoh screenshot](img/t1encaphasil.png)
+![contoh screenshot](img/t1anggota.png)
 
+![contoh screenshot](img/t1anggota2.png)
+
+###### Link code 
+
+link kode program Anggota.java : [Anggota.java](../../src/4_Relasi_Class/Anggota1841720099Rafi.java)
+
+##### Class Barang
+
+###### Source code
+
+![contoh screenshot](img/t1barangfull.png)
+
+![contoh screenshot](img/t1barangfull2.png)
+
+![contoh screenshot](img/t1barangfull3.png)
+
+![contoh screenshot](img/t1barang.png)
+
+![contoh screenshot](img/t1barang2.png)
+
+
+###### Link code 
+
+link kode program Barang.java : [Barang.java](../../src/4_Relasi_Class/Barang1841720099Rafi.java)
+
+##### Class Transaksi
+
+###### Source code
+
+![contoh screenshot](img/t1transaksifull.png)
+
+![contoh screenshot](img/t1transaksifull2.png)
+
+![contoh screenshot](img/t1transaksifull3.png)
+
+![contoh screenshot](img/t1transaksi.png)
+
+![contoh screenshot](img/t1transaksi2.png)
+
+###### Link code 
+
+link kode program Transaksi.java : [Transaksi.java](../../src/4_Relasi_Class/Transaksi1841720099Rafi.java)
+
+##### Class Detail Transaksi
+
+###### Source code
+
+![contoh screenshot](img/t1detailfull.png)
+
+![contoh screenshot](img/t1detailfull2.png)
+
+![contoh screenshot](img/t1detailfull3.png)
+
+![contoh screenshot](img/t1detail.png)
+
+![contoh screenshot](img/t1detail2.png)
+
+###### Link code 
+
+link kode program Detail.java : [Detail.java](../../src/4_Relasi_Class/DetailTransaksi1841720099Rafi.java)
+
+##### Main
+
+###### Source code 
+
+![contoh screenshot](img/t1mainfull.png)
+
+![contoh screenshot](img/t1main.png)   
+
+###### Link code 
+
+link kode program Main.java : [Main.java](../../src/4_Relasi_Class/MainGerbong1841720099Rafi.java)
+
+
+##### Hasil
+
+![contoh screenshot](img/t1hasil.png)
 
 
 ## Kesimpulan
 
-Dari praktikum diatas kita diajarkan cara penggunaan getter and setter juga membuat program dari sebuah diagram UML 
+Dari praktikum diatas kita diajarkan cara pembuatan Relasi Kelas menggunakan method getter and setter juga membuat rancangan Class diagram menggunakan uml serta mengimplementasikannya kedalam program
 
 ## Pernyataan Diri
 
