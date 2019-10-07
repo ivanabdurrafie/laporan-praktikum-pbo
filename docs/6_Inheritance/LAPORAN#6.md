@@ -7,7 +7,7 @@
 4. Mampu  membuat  objek  dari suatu  subclass  dan melakukan pengaksesan  terhadap  atribut dan method baik  yang  dimiliki sendiri  atau  turunan  dari superclass  nya. 
 
 ## Ringkasan Materi
-
+dalam inheritance kita bisa memanggil attribut ataupun method pada class parent menggunakan super digunakan untuk menghemat code karena tidak mengulang penulisan kode berulang kali
 
 
  
@@ -108,121 +108,89 @@ link kode program Main.java : [Main.java](../../src/6_Inheritance/Percobaan11841
    
         karena attribut yang akan dipanggil ber modifier private sehingga tidak bisa diakses untuk class lain yang bukan turunannya
 
-### Percobaan 3
+### Percobaan 3 (Super)
 
-##### Class A
+##### Class Bangun
 
-![contoh screenshot](img/p2afull.png)
+![contoh screenshot](img/p3bangunfull.png)
 
-![contoh screenshot](img/p2a.png)
+![contoh screenshot](img/p3bangun.png)
 
-link kode program ClassA.java : [ClassA.java](../../src/6_Inheritance/P2ClassA1841720099Rafi.java)
+link kode program ClassBangun.java : [ClassBangun.java](../../src/6_Inheritance/Bangun1841720099Rafi.java)
 
-##### Class B
+##### Class Tabung
 
-![contoh screenshot](img/p2bfull.png)
+![contoh screenshot](img/p3tabungfull.png)
 
-![contoh screenshot](img/p2b.png)
+![contoh screenshot](img/p3tabung.png)
 
-link kode program ClassB.java : [ClassB.java](../../src/6_Inheritance/P2ClassB1841720099Rafi.java)
+link kode program ClassTabung.java : [ClassTabung.java](../../src/6_Inheritance/Tabung1841720099Rafi.java)
 
 
 ##### Main
 
-![contoh screenshot](img/p2mainfull.png)
+![contoh screenshot](img/p3mainfull.png)
 
-![contoh screenshot](img/p2main.png)
+![contoh screenshot](img/p3main.png)
 
-link kode program Main.java : [Main.java](../../src/6_Inheritance/Percobaan11841720099Rafi.java)
+link kode program Main.java : [Main.java](../../src/6_Inheritance/P3Main1841720099Rafi.java)
 
 ##### Hasil
 
-![contoh screenshot](img/p2hasil.png)
+![contoh screenshot](img/p3hasil.png)
 
 ##### Pertanyaan
 
-1.Pada  percobaan  2  diatas  program  yang  dijalankan  terjadi  error,  kemudian  perbaiki  sehingga program  tersebut  bisa  dijalankan  dan  tidak  error! 
+1. Jelaskan  fungsi   “super”  pada  potongan  program  berikut  di  class  Tabung! 
 
-        dengan menambahkan fungsi get kita bisa memanggil attribut dari class parent yang ber modifier private
-``` java
-    public int getmX() {
-        return mX;
-    }
-    public int getmY() {
-        return mY;
-    }
-```
+![contoh screenshot](img/p3soal1.png)
+
+    super.nama attribut berfungsi untuk memanggil attribut pada class parent
     
 
-2. Jelaskan  apa  penyebab  program  pada  percobaan  2  ketika  dijalankan  terdapat  error! 
+2. Jelaskan  fungsi  “super”  dan  “this”  pada  potongan  program  berikut  di  class  Tabung! 
    
-        karena attribut yang akan dipanggil ber modifier private sehingga tidak bisa diakses untuk class lain yang bukan turunannya
+![contoh screenshot](img/p3soal2.png)
 
-### Percobaan 4
+    fungsi super adalah untuk memanggil attribut dari class parent dan fungsi this untuk memanggil atrribut yang berada di classnya sendiri
 
-##### Relasi Kelas gerbong, penumpang dan kursi berdasarkan UML 
+3. Jelaskan  mengapa  pada  class  Tabung  tidak  dideklarasikan  atribut  “phi”  dan  “r”  tetapi  class tersebut  dapat  mengakses  atribut  tersebut! 
 
-![contoh screenshot](img/p4uml.png)
+        karena sudah attribut phi dan r sudah terdapat di class parent maka class turunannya bisa memanggil attribut yang diinginkan 
 
-##### Class Penumpang
+### Percobaan 4  (super  contsructor)
 
-###### Source code
+##### Class A
 
-![contoh screenshot](img/p4penumpangfull1.png)
+![contoh screenshot](img/p4afull.png)
 
-![contoh screenshot](img/p4penumpangfull2.png)
+![contoh screenshot](img/p4a.png)
 
-![contoh screenshot](img/p4penumpang1.png)
+link kode program ClassA.java : [ClassA.java](../../src/6_Inheritance/P4ClassA1841720099Rafi.java)
 
-###### Link code 
+##### Class B
 
-link kode program Penumpang.java : [Penumpang.java](../../src/4_Relasi_Class/Penumpang1841720099Rafi.java)
+![contoh screenshot](img/p4bfull.png)
 
-##### Class Kursi
+![contoh screenshot](img/p4b.png)
 
-###### Source code
+link kode program ClassB.java : [ClassB.java](../../src/6_Inheritance/P4ClassB1841720099Rafi.java)
 
-![contoh screenshot](img/p4kursifull1.png)
+##### Class C
 
-![contoh screenshot](img/p4kursifull2.png)
+![contoh screenshot](img/p4cfull.png)
 
-![contoh screenshot](img/p4kursi.png)
+![contoh screenshot](img/p4c.png)
 
-
-###### Link code 
-
-link kode program Kursi.java : [kursi.java](../../src/4_Relasi_Class/Kursi1841720099Rafi.java)
-
-##### Class Gerbong
-
-###### Source code
-
-![contoh screenshot](img/p4gerbongfull1.png)
-
-![contoh screenshot](img/p4gerbongfull2.png)
-
-![contoh screenshot](img/p4gerbongfull3.png)
-
-![contoh screenshot](img/p4gerbong1.png)
-
-![contoh screenshot](img/p4gerbong2.png)
-
-###### Link code 
-
-link kode program Gerbong.java : [Gerbong.java](../../src/4_Relasi_Class/Gerbong1841720099Rafi.java)
+link kode program ClassC.java : [ClassC.java](../../src/6_Inheritance/P4ClassC1841720099Rafi.java)
 
 ##### Main
 
-###### Source code 
-
 ![contoh screenshot](img/p4mainfull.png)
 
-![contoh screenshot](img/p4main.png)   
+![contoh screenshot](img/p4main.png)
 
-###### Link code 
-
-link kode program Main.java : [Main.java](../../src/4_Relasi_Class/MainGerbong1841720099Rafi.java)
-
+link kode program Main.java : [Main.java](../../src/6_Inheritance/P4Main1841720099Rafi.java)
 
 ##### Hasil
 
@@ -230,128 +198,217 @@ link kode program Main.java : [Main.java](../../src/4_Relasi_Class/MainGerbong18
 
 ##### Pertanyaan
 
-1. Pada main program dalam class MainPercobaan4, berapakah jumlah kursi dalam
-Gerbong A ?
-2. Perhatikan potongan kode pada method info() dalam class Kursi. Apa maksud kode
-tersebut ?
-...
-if (this.penumpang != null) {
-info += "Penumpang: " + penumpang.info() + "\n";
-}
-...
-3. Mengapa pada method setPenumpang() dalam class Gerbong, nilai nomor dikurangi
-dengan angka 1 ?
-4. Instansiasi objek baru budi dengan tipe Penumpang, kemudian masukkan objek baru
-tersebut pada gerbong dengan gerbong.setPenumpang(budi, 1). Apakah yang
-terjadi ?
-5. Modifikasi program sehingga tidak diperkenankan untuk menduduki kursi yang sudah ada
-penumpang lain !
+1. Pada  percobaan  4  sebutkan  mana  class  yang  termasuk  superclass  dan  subclass,  kemudian 
+jelaskan  alasannya!  
 
-##### Jawaban
+       superclass : ClassA1841720099Rafi, Subclass : ClassB1841720099Rafi dan ClassC1841720099Rafi karena Class B dan Class C memanggil parent Class A dengan menggunakan extends
+    
 
-1. jumlah kursi dalam gerbong A adalah 10
-2. pada source tersebut info penumpang akan ditampilkan jika value penumpang tidak kosong, jika kosong maka tidak akan menampilkan info penumpang tersebut
-3. karena pada array dimulai dari angka 0
-4. Pada kursi nomor satu penumpang akan berubah menjadi budi karena data tertimpa
-5. modifikasi source program
-![contoh screenshot](img/p4pertanyaan.png)
+2.  Ubahlah  isi  konstruktor  default  ClassC  seperti  berikut:  
+   
+    ![contoh screenshot](img/p4soal2.png)
 
+    Tambahkan  kata  super()  di  baris  Pertaman dalam  konstruktor  defaultnya.  Coba  jalankan kembali  class  Percobaan4  dan  terlihat  tidak ada perbedaan  dari  hasil  outputnya! 
+
+3. Ublah  isi  konstruktor  default  ClassC  seperti  berikut:  
+
+    ![contoh screenshot](img/p4soal3.png) 
+
+    Ketika  mengubah  posisi  super()  dibaris  kedua  dalam  kontruktor  defaultnya  dan  terlihat  ada error.  Kemudian  kembalikan  super()  kebaris pertama  seperti  sebelumnya,  maka  errornya akan hilang. 
+
+    Perhatikan hasil keluaran ketika class Percobaan4 dijalankan. Kenapa bisa tampil output seperti berikut pada saat instansiasi  objek test dari class ClassC 
+
+    ![contoh screenshot](img/p4soal3h.png) 
+
+    Jelaskan bagaimana urutan proses jalannya konstruktor saat objek test dibuat!
+
+        Urutan proses jalannya Constructor adalah mulai dari constructor dari class parent lalu sub class akan dijalankan sesuai tingkat sub classnya
+
+4. Apakah fungsi super() pada potongan program dibawah ini di ClassC! 
+
+    ![contoh screenshot](img/p4soal4.png) 
+
+        fungsi super() pada potongan program diatas adalah untuk memanggil constructor dari class parent
+
+### Percobaan 5
+
+##### Class Karyawan
+
+![contoh screenshot](img/p5karyawanfull.png)
+
+![contoh screenshot](img/p5karyawan.png)
+
+link kode program Karyawan.java : [Karyawan.java](../../src/6_Inheritance/Karyawan1841720099Rafi.java)
+
+##### Class Manager
+
+![contoh screenshot](img/p5managerfull.png)
+
+![contoh screenshot](img/p5manager.png)
+
+link kode program Manager.java : [Manager.java](../../src/6_Inheritance/Manager1841720099Rafi.java)
+
+##### Class Staff
+
+![contoh screenshot](img/p5stafffull.png)
+
+![contoh screenshot](img/p5staff.png)
+
+link kode program Staff.java : [Staff.java](../../src/6_Inheritance/Staff1841720099Rafi.java)
+
+##### Main
+
+![contoh screenshot](img/p5mainfull.png)
+
+![contoh screenshot](img/p5main.png)
+
+link kode program Main.java : [Main.java](../../src/6_Inheritance/P5Inheritance11841720099Rafi.java)
+
+##### Hasil
+
+![contoh screenshot](img/p5hasil.png)
+
+##### Pertanyaan
+
+1. Sebutkan class mana yang termasuk super class dan sub class dari percobaan 5 diatas!   
+
+       superclass : Karyawan1841720099Rafi, Subclass : Staff1841720099Rafi dan Manager1841720099Rafi 
+    
+
+2.  Kata kunci apakah yang digunakan untuk menurunkan suatu class ke class yang lain?  
+   
+        kata kunci yang digunakan untuk menurunkan suatu class ke class yang lain adalah extends
+
+3. Perhatikan kode program pada class Manager, atribut apa saja yang dimiliki oleh class tersebut? Sebutkan atribut mana saja yang diwarisi dari class Karyawan!   
+
+        attribut yang diimiliki class manager adalah mTunjangan dan attribut yang diwarisi oleh class Karyawan adalah mGaji
+ 
+4. Jelaskan kata kunci super pada potongan program dibawah ini yang terdapat pada class Manager! 
+
+    ![contoh screenshot](img/p5soal.png) 
+
+        super pada potongan program diatas adalah untuk memanggil attribut gaji dari class karyawan yang menjadi parent dari class manager untuk menentukan total gaji dengan menambahkan gaji dengan tunjangan
+
+5. Program pada percobaan 1 diatas termasuk dalam jenis inheritance apa? Jelaskan alasannya! 
+   
+         jenis inheritance hirarki karena terdapat dua subclass yang terkait pada class parent
+
+
+
+### Percobaan 6
+
+Menambahkan Class StaffHarian dan StaffTetap berdasarkan Percobaan 5
+
+##### Class StaffTetap
+
+![contoh screenshot](img/p6stafftetapfull.png)
+
+![contoh screenshot](img/p6stafftetap.png)
+
+link kode program StaffTetap.java : [StaffTetap.java](../../src/6_Inheritance/StaffTetap1841720099Rafi.java)
+
+##### Class StaffHarian
+
+![contoh screenshot](img/p6staffharianfull.png)
+
+![contoh screenshot](img/p6staffharian.png)
+
+link kode program StaffHarian.java : [StaffHarian.java](../../src/6_Inheritance/StaffHarian1841720099Rafi.java)
+
+##### Main
+
+![contoh screenshot](img/p6mainfull.png)
+
+![contoh screenshot](img/p6main.png)
+
+link kode program Main.java : [Main.java](../../src/6_Inheritance/Inheritance11841720099Rafi.java)
+
+##### Hasil
+
+![contoh screenshot](img/p6hasil.png)
+
+##### Pertanyaan
+
+1. Berdasarkan class diatas manakah yang termasuk single inheritance dan mana yang termasuk multilevel inheritance?   
+
+       Class diatas berjenis multilevel inheritance 
+    
+
+2.  Perhatikan kode program class StaffTetap dan StaffHarian, atribut apa saja yang dimiliki oleh class tersebut Sebutkan atribut mana saja yang diwarisi dari class Staff!  
+
+        attribut yang dimiliki StaffTetap adalah mGolongan dan mAsuransi sedangkan attribut yang dimiliki oleh StaffHarian adalah mJmlJamkerja dan attribut yang diwari oleh class staff adalah mLembur dan mPotongan
+
+3. Apakah fungsi potongan program berikut pada class StaffHarian  
+
+    ![contoh screenshot](img/p6soal3.png) 
+
+        memanggil attribut nama,alamat,jk,umur,gaji,lembur dan potongan dari class parent
+ 
+4. Apakah fungsi potongan program berikut pada class StaffHarian
+
+    ![contoh screenshot](img/p6soal4.png) 
+
+        Memanggil fungsi tampilDataStaff pada class Staff yaitu parent dari StaffHarian
+
+5. Perhatikan kode program dibawah ini yang terdapat  pada class StaffTetap 
+   
+   ![contoh screenshot](img/p6soal5.png) 
+
+    Terlihat dipotongan program diatas atribut gaji lembur dan potongan dapat diakses langsung. Kenapa hal ini bisa terjadi dan bagaimana class StaffTetap memiliki atribut gaji, lembur, dan potongan padahal dalam class tersebut tidak dideklarasikan atribut gaji, lembur, dan potongan? 
+
+        dengan memanggil attribut dari class parent  
 
 ## Tugas
 
 ### Tugas 1
 
-##### Relasi Kelas dengan Studi Kasus Toko
+##### Class Komputer
 
-![contoh screenshot](img/t1uml.png)
+![contoh screenshot](img/t1komputerfull.png)
 
-##### Class Anggota
+![contoh screenshot](img/t1komputer.png)
 
-###### Source code
+link kode program Komputer.java : [Komputer.java](../../src/6_Inheritance/Komputer1841720099Rafi.java)
 
-![contoh screenshot](img/t1anggotafull.png)
+##### Class Laptop
 
-![contoh screenshot](img/t1anggotafull2.png)
+![contoh screenshot](img/t1laptopfull.png)
 
-![contoh screenshot](img/t1anggotafull3.png)
+![contoh screenshot](img/t1laptop.png)
 
-![contoh screenshot](img/t1anggotafull4.png)
+link kode program Laptop.java : [Laptop.java](../../src/6_Inheritance/Laptop1841720099Rafi.java)
 
-![contoh screenshot](img/t1anggota.png)
+##### Class PC
 
-![contoh screenshot](img/t1anggota2.png)
+![contoh screenshot](img/t1pcfull.png)
 
-###### Link code 
+![contoh screenshot](img/t1pc.png)
 
-link kode program Anggota.java : [Anggota.java](../../src/4_Relasi_Class/Anggota1841720099Rafi.java)
+link kode program PC.java : [PC.java](../../src/6_Inheritance/PC1841720099Rafi.java)
 
-##### Class Barang
+##### Class Mac
 
-###### Source code
+![contoh screenshot](img/t1macfull.png)
 
-![contoh screenshot](img/t1barangfull.png)
+![contoh screenshot](img/t1mac.png)
 
-![contoh screenshot](img/t1barangfull2.png)
+link kode program Mac.java : [Mac.java](../../src/6_Inheritance/Mac1841720099Rafi.java)
 
-![contoh screenshot](img/t1barangfull3.png)
+##### Class Windows
 
-![contoh screenshot](img/t1barang.png)
+![contoh screenshot](img/t1windowsfull.png)
 
-![contoh screenshot](img/t1barang2.png)
+![contoh screenshot](img/t1windows.png)
 
-
-###### Link code 
-
-link kode program Barang.java : [Barang.java](../../src/4_Relasi_Class/Barang1841720099Rafi.java)
-
-##### Class Transaksi
-
-###### Source code
-
-![contoh screenshot](img/t1transaksifull.png)
-
-![contoh screenshot](img/t1transaksifull2.png)
-
-![contoh screenshot](img/t1transaksifull3.png)
-
-![contoh screenshot](img/t1transaksi.png)
-
-![contoh screenshot](img/t1transaksi2.png)
-
-###### Link code 
-
-link kode program Transaksi.java : [Transaksi.java](../../src/4_Relasi_Class/Transaksi1841720099Rafi.java)
-
-##### Class Detail Transaksi
-
-###### Source code
-
-![contoh screenshot](img/t1detailfull.png)
-
-![contoh screenshot](img/t1detailfull2.png)
-
-![contoh screenshot](img/t1detailfull3.png)
-
-![contoh screenshot](img/t1detail.png)
-
-![contoh screenshot](img/t1detail2.png)
-
-###### Link code 
-
-link kode program Detail.java : [Detail.java](../../src/4_Relasi_Class/DetailTransaksi1841720099Rafi.java)
+link kode program Windows.java : [Windows.java](../../src/6_Inheritance/Windows1841720099Rafi.java)
 
 ##### Main
 
-###### Source code 
-
 ![contoh screenshot](img/t1mainfull.png)
 
-![contoh screenshot](img/t1main.png)   
+![contoh screenshot](img/t1main.png)
 
-###### Link code 
-
-link kode program Main.java : [Main.java](../../src/4_Relasi_Class/MainGerbong1841720099Rafi.java)
-
+link kode program Main.java : [Main.java](../../src/6_Inheritance/TMain1841720099Rafi.java)
 
 ##### Hasil
 
@@ -360,7 +417,7 @@ link kode program Main.java : [Main.java](../../src/4_Relasi_Class/MainGerbong18
 
 ## Kesimpulan
 
-Dari praktikum diatas kita diajarkan cara pembuatan Relasi Kelas menggunakan method getter and setter juga membuat rancangan Class diagram menggunakan uml serta mengimplementasikannya kedalam program
+Dari praktikum diatas kita diajarkan cara penerapan dari inheritance dengan menggunakan extends dan super pada subclass yang ingin dituju
 
 ## Pernyataan Diri
 
