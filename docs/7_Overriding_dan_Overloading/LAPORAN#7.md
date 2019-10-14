@@ -29,7 +29,7 @@ Dalam Overloading kita bisa merubah parameter yang ada di dalam method kita seda
 
 ![contoh screenshot](img/p1karyawanfull3.png)
 
-link kode program Karyawan.java : [Karyawan.java](../../src/7_Overriding_dan_Overloading/Karyawan1841720099rafi.java)
+link kode program Karyawan.java : [Karyawan.java](../../src/7_Overriding_dan_Overloading/Karyawan1841720099Rafi.java)
 
 ##### Class Staff
 
@@ -39,7 +39,7 @@ link kode program Karyawan.java : [Karyawan.java](../../src/7_Overriding_dan_Ove
 
 ![contoh screenshot](img/p1staff.png)
 
-link kode program Staff.java : [Staff.java](../../src/7_Overriding_dan_Overloading/Staff1841720099rafi.java)
+link kode program Staff.java : [Staff.java](../../src/7_Overriding_dan_Overloading/Staff1841720099Rafi.java)
 
 ##### Class Manager
 
@@ -53,7 +53,7 @@ link kode program Staff.java : [Staff.java](../../src/7_Overriding_dan_Overloadi
 
 ![contoh screenshot](img/p1manager2.png)
 
-link kode program Manager.java : [Manager.java](../../src/7_Overriding_dan_Overloading/Manager1841720099rafi.java)
+link kode program Manager.java : [Manager.java](../../src/7_Overriding_dan_Overloading/Manager1841720099Rafi.java)
 
 ##### Main
 
@@ -65,7 +65,7 @@ link kode program Manager.java : [Manager.java](../../src/7_Overriding_dan_Overl
 
 ![contoh screenshot](img/p1mainfull4.png)
 
-link kode program Main.java : [Main.java](../../src/7_Overriding_dan_Overloading/Utama1841720099rafi.java)
+link kode program Main.java : [Main.java](../../src/7_Overriding_dan_Overloading/Utama1841720099Rafi.java)
 
 ##### Hasil
 
