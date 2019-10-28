@@ -1,236 +1,245 @@
-# Laporan Praktikum #7 - OVERLOADING DAN OVERRIDING
+# Laporan Praktikum #9 - Abstract Class dan Interface
 
 ## Kompetensi
 Setelah menempuh pokok bahasan ini, mahasiswa mampu :
-1. Memahami konsep overloading dan overriding,
-2. Memahami perbedaan overloading dan overriding,
-3. Ketepatan dalam mengidentifikasi method overriding dan overloading
-4. Ketepatan dalam mempraktekkan instruksi pada jobsheet
-5. Mengimplementasikan method overloading dan overriding.
+1. Menjelaskan maksud dan tujuan penggunaan Abstract Class;
+2. Menjelaskan maksud dan tujuan penggunaan Interface;
+3. Menerapkan Abstract Class dan Interface di dalam pembuatan program.
 
 ## Ringkasan Materi
-Dalam Overloading kita bisa merubah parameter yang ada di dalam method kita sedangkan Overriding mengubah isi dari method turunan yang diambil dari method class parent
+Penerapan dari abstract class dan interface, karakteristik serta fungsi dari abstract class dan interface itu sendiri
 
-
- 
 ## Percobaan
 
 ### Percobaan 1
 
 ##### Class Diagram
 
-![contoh screenshot](img/p1classdiagram.png)
+![contoh screenshot](img/p1uml.png)
 
-##### Class Karyawan
+##### Class Hewan
 
-![contoh screenshot](img/p1karyawanfull1.png)
+![contoh screenshot](img/p1hewanfull.png)
 
-![contoh screenshot](img/p1karyawanfull2.png)
+![contoh screenshot](img/p1hewan.png)
 
-![contoh screenshot](img/p1karyawanfull3.png)
+link kode program Hewan.java : [Hewan.java](../../src/9_Abstract_Class_dan_Interface/Hewan1841720099Rafi.java)
 
-link kode program Karyawan.java : [Karyawan.java](../../src/7_Overriding_dan_Overloading/Karyawan1841720099Rafi.java)
+##### Class Kucing
 
-##### Class Staff
+![contoh screenshot](img/p1kucingfull.png)
 
-![contoh screenshot](img/p1stafffull1.png)
+![contoh screenshot](img/p1kucing.png)
 
-![contoh screenshot](img/p1stafffull2.png)
+link kode program Kucing.java : [Kucing.java](../../src/9_Abstract_Class_dan_Interface/Kucing1841720099Rafi.java)
 
-![contoh screenshot](img/p1staff.png)
+##### Class Ikan
 
-link kode program Staff.java : [Staff.java](../../src/7_Overriding_dan_Overloading/Staff1841720099Rafi.java)
+![contoh screenshot](img/p1ikanfull.png)
 
-##### Class Manager
+![contoh screenshot](img/p1ikan.png)
 
-![contoh screenshot](img/p1managerfull1.png)
+link kode program Ikan.java : [Ikan.java](../../src/9_Abstract_Class_dan_Interface/Ikan1841720099Rafi.java)
 
-![contoh screenshot](img/p1managerfull2.png)
+##### Class Orang
 
-![contoh screenshot](img/p1managerfull3.png)
+![contoh screenshot](img/p1orangfull.png)
 
-![contoh screenshot](img/p1manager1.png)
+![contoh screenshot](img/p1orang.png)
 
-![contoh screenshot](img/p1manager2.png)
-
-link kode program Manager.java : [Manager.java](../../src/7_Overriding_dan_Overloading/Manager1841720099Rafi.java)
+link kode program Orang.java : [Orang.java](../../src/9_Abstract_Class_dan_Interface/Orang1841720099Rafi.java)
 
 ##### Main
 
-![contoh screenshot](img/p1mainfull1.png)
+![contoh screenshot](img/p1mainfull.png)
 
-![contoh screenshot](img/p1mainfull2.png)
+![contoh screenshot](img/p1main.png)
 
-![contoh screenshot](img/p1mainfull3.png)
-
-![contoh screenshot](img/p1mainfull4.png)
-
-link kode program Main.java : [Main.java](../../src/7_Overriding_dan_Overloading/Utama1841720099Rafi.java)
+link kode program Main.java : [Main.java](../../src/9_Abstract_Class_dan_Interface/PboMain1841720099Rafi.java)
 
 ##### Hasil
 
 ![contoh screenshot](img/p1hasil.png)
 
-![contoh screenshot](img/p1hasil2.png)
 
+#### Pertanyaan
 
-### Latihan
-
-#### Latihan 1
-
-##### Class Perkalianku
-
-![contoh screenshot](img/l1perkalianfull.png)
-
-![contoh screenshot](img/l1perkalian.png)
-
-![contoh screenshot](img/l1hasil.png)
-
-link kode program Perkalianku.java : [Perkalianku.java](../../src/7_Overriding_dan_Overloading/Perkalianku1841720099Rafi.java)
-
-##### Pertanyaan
-
-1. Dari source coding diatas terletak dimanakah overloading?
+1. Bolehkah apabila sebuah class yang meng-extend suatu abstract class tidak mengimplementasikan method abstract yang ada di class induknya? Buktikan!
    
-     
+
+        Boleh
+         
     ``` java
-    void perkalian(int a,int b, int c){
-        System.out.println(a*b*c)
-    }
-    
+            Hewan1841720099Rafi burung = new Hewan1841720099Rafi() {
+            @Override
+            public void bergerakRafi() {
+                System.out.println("Terbang");
+            }
+        };
     ```
-    
+         
+### Percobaan 2
 
-2. Jika terdapat overloading ada berapa jumlah parameter yang berbeda?
-   
-        jumlah parameter yang berbeda adalah 1
+##### Class Diagram
 
-#### Latihan 2
+![contoh screenshot](img/p2uml.png)
 
-##### Class Perkalianku
+##### Interface *ICumlaude*
 
-![contoh screenshot](img/l2perkalianfull.png)
+![contoh screenshot](img/p2intercumlaudefull.png)
 
-![contoh screenshot](img/l2perkalian.png)
+![contoh screenshot](img/p2intercumlaude.png)
 
-![contoh screenshot](img/l2hasil.png)
-
-link kode program Perkalianku.java : [Perkalianku.java](../../src/7_Overriding_dan_Overloading/P2Perkalianku1841720099Rafi.java)
-
-##### Pertanyaan
-
-1. Dari source coding diatas terletak dimanakah overloading?
-   
-     
-    ``` java
-    void perkalian(double a,double b){
-        System.out.println(a*b)
-    }
-    
-    ```
-    
-
-2. Jika terdapat overloading ada berapa jumlah parameter yang berbeda?
-   
-        jumlah parameter yang berbeda adalah 2
-
-#### Latihan 3
-
-##### Class Ikan
-
-![contoh screenshot](img/l3ikanfull.png)
-
-![contoh screenshot](img/l3ikan.png)
-
-![contoh screenshot](img/l3hasil.png)
-
-link kode program Ikan.java : [Ikan.java](../../src/7_Overriding_dan_Overloading/Ikan1841720099Rafi.java)
-
-##### Pertanyaan
-
-1. Dari source coding diatas terletak dimanakah overriding?
-   
-     
-    ``` java
-    class Piranha extends Ikan{
-        public void swim(){
-            System.out.println("Piranha bisa makan daging")
-        }
-    }
-    
-    ```
-    
-
-2. Jabarkanlah apabila sourcoding diatas jika terdapat overriding?
-   
-        overriding terjadi karena pada class piranha isi dari method swim dirubah menjadi "Piranha bisa makan daging"
-
- 
-
-## Tugas
-
-### Tugas 1 Overloading
-
-![contoh screenshot](img/s1uml.png)
-
-##### Class Segitiga
-
-![contoh screenshot](img/s2segitigafull.png)
-
-![contoh screenshot](img/s2segitiga.png)
-
-link kode program Segitiga.java : [Segitiga.java](../../src/7_Overriding_dan_Overloading/Segitiga1841720099Rafi.java)
-
-##### Class Main
-
-![contoh screenshot](img/s2mainfull.png)
-
-![contoh screenshot](img/s2main.png)
-
-link kode program Main.java : [Main.java](../../src/7_Overriding_dan_Overloading/T1Main1841720099Rafi.java)
-
-##### Hasil
-
-![contoh screenshot](img/s2hasil.png)
-
-### Tugas 2 Overriding
-
-![contoh screenshot](img/s2uml.png)
-
-##### Class Manusia
-
-![contoh screenshot](img/s1manusiafull.png)
-
-![contoh screenshot](img/s1manusia.png)
-
-link kode program Manusia.java : [Manusia.java](../../src/7_Overriding_dan_Overloading/Manusia1841720099Rafi.java)
-
-##### Class Dosen
-
-![contoh screenshot](img/s1dosenfull.png)
-
-![contoh screenshot](img/s1dosen.png)
-
-link kode program Dosen.java : [Dosen.java](../../src/7_Overriding_dan_Overloading/Dosen1841720099Rafi.java)
+link kode program Interface ICumlaude.java : [ICumlaude.java](../../src/9_Abstract_Class_dan_Interface/P2ICumlaude1841720099Rafi.java)
 
 ##### Class Mahasiswa
 
-![contoh screenshot](img/s1mahasiswafull.png)
+![contoh screenshot](img/p2mahasiswafull.png)
 
-![contoh screenshot](img/s1mahasiswa.png)
+![contoh screenshot](img/p2mahasiswa.png)
 
-link kode program Mahasiswa.java : [Mahasiswa.java](../../src/7_Overriding_dan_Overloading/Mahasiswa1841720099Rafi.java)
+link kode program Mahasiswa.java : [Mahasiswa.java](../../src/9_Abstract_Class_dan_Interface/P2Mahasiswa1841720099Rafi.java)
+
+##### Class Sarjana
+
+![contoh screenshot](img/p2sarjanafull.png)
+
+![contoh screenshot](img/p2sarjana.png)
+
+link kode program Sarjana.java : [Sarjana.java](../../src/9_Abstract_Class_dan_Interface/P2Sarjana1841720099Rafi.java)
+
+##### Class Pasca Sarjana
+
+![contoh screenshot](img/p2pascasarjanafull.png)
+
+![contoh screenshot](img/p2pascasarjana.png)
+
+link kode program Pascasarjana.java : [Pascasarjana.java](../../src/9_Abstract_Class_dan_Interface/P2Pascasarjana1841720099Rafi.java)
+
+##### Class Rektor
+
+![contoh screenshot](img/p2rektorfull.png)
+
+![contoh screenshot](img/p2rektor.png)
+
+link kode program Rektor.java : [Rektor.java](../../src/9_Abstract_Class_dan_Interface/P2Rektor1841720099Rafi.java)
+
+
+##### Main
+
+![contoh screenshot](img/p2mainfull.png)
+
+![contoh screenshot](img/p2main.png)
+
+link kode program Main.java : [Main.java](../../src/9_Abstract_Class_dan_Interface/PboMain1841720099Rafi.java)
 
 ##### Hasil
 
-![contoh screenshot](img/s1hasil.png)
+![contoh screenshot](img/p2hasil.png)
 
 
+#### Pertanyaan
+
+1. Mengapa pada langkah nomor 9 terjadi error? Jelaskan!
+
+        Interface tidak terkoneksi pada class mahasiswa
+
+2. Dapatkah method kuliahDiKampus() dipanggil dari objek sarjanaCumlaude di class Program? Mengapa demikian?
+   
+        Bisa, dengan  menambahkan abstract method kuliahDiKampus() pada interface cumlaude 
+
+         
+    ``` java
+            public interface ICumlaude1841720099Rafi {
+            public abstract void lulusRafi();
+            public abstract void meraihIPKTinggiRafi();
+            public abstract void kuliahDiKampusRafi();
+            }
+    ```
+
+3. Dapatkah method kuliahDiKampus() dipanggil dari parameter mahasiswa di method beriSertifikatCumlaude() pada class Rektor? Mengapa demikian?
+
+        Bisa, Dengan menambahkan abstract method di interface cumlaude dan pada class rektor method kuliahDiKampus() dipanggil
+
+4. Modifikasilah method beriSertifikatCumlaude() pada class Rektor agar hasil eksekusi class Program menjadi seperti berikut ini:
+    ``` java
+
+
+            public void beriSertifikatCumlaudeRafi(P2ICumlaude1841720099Rafi mahasiswa){
+            System.out.println("Saya Rektor, memberikan sertifikat cumlaude.");
+            System.out.println("Selamat! silahkan perkenalkan diri anda .");
+            mahasiswa.kuliahDiKampusRafi();
+            mahasiswa.lulusRafi();
+            mahasiswa.meraihIPKTinggiRafi();
+            System.out.println("--------------------------------------------");
+            }
+    ```
+
+### Percobaan 3
+
+##### Class Diagram
+
+![contoh screenshot](img/p3uml.png)
+
+##### interface *IBerprestasi*
+
+![contoh screenshot](img/p3interberprestasifull.png)
+
+![contoh screenshot](img/p3interberprestasi.png)
+
+link kode program interface IBerprestasi.java : [IBerprestasi.java](../../src/9_Abstract_Class_dan_Interface/IBerprestasi1841720099Rafi.java)
+
+##### Class Pasca Sarjana
+
+![contoh screenshot](img/p3pascasarjanafull.png)
+
+![contoh screenshot](img/p3pascasarjanafull.png)
+
+link kode program Kucing.java : [Kucing.java](../../src/9_Abstract_Class_dan_Interface/Pascasarjana1841720099Rafi.java)
+
+##### Class Rektor
+
+![contoh screenshot](img/p3rektorfull.png)
+
+![contoh screenshot](img/p3rektor.png)
+
+link kode program Rektor.java : [Rektor.java](../../src/9_Abstract_Class_dan_Interface/Rektor1841720099Rafi.java)
+
+##### Main
+
+![contoh screenshot](img/p3mainfull.png)
+
+![contoh screenshot](img/p3main.png)
+
+link kode program Main.java : [Main.java](../../src/9_Abstract_Class_dan_Interface/PboMain1841720099Rafi.java)
+
+##### Hasil
+
+![contoh screenshot](img/p3hasil.png)
+
+
+#### Pertanyaan
+
+1. Apabila Sarjana Berprestasi harus menjuarai kompetisi NASIONAL dan menerbitkan artikel di jurnal NASIONAL, maka modifikasilah class-class yang terkait pada aplikasi Anda agar di class Program objek pakRektor dapat memberikan sertifikat mawapres pada objek sarjanaCumlaude.
+   
+        Dengan mengoverride abstrak method dari interface IBerprestasi ke class Sarjana
+         
+    ``` java
+           @Override
+            public void menjuraiKompetisirafi() {
+                System.out.println("Saya telah menjuarai kompetisi Nasional");
+            }
+
+            @Override
+            public void membuatPublikasiIlmiahRafi() {
+                System.out.println("Saya menerbitkan artikel di jurnal Nasional");
+            }
+    ```
 
 
 ## Kesimpulan
 
-Dari praktikum diatas kita diajarkan cara penerapan dari Overloading dan Overriding bagaimana cara membuat oveloading dan overriding beserta ketentuannya
+Dari praktikum diatas kita diajarkan cara penerapan dari abstract class dan interface untuk melindungi source penting dari user pemakai
 
 ## Pernyataan Diri
 
