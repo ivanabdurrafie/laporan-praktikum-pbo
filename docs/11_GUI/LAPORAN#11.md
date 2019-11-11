@@ -8,6 +8,14 @@ textarea, menu, serta table;
 3. Menambahkan event handling pada aplikasi GUI.
 ## Ringkasan Materi
 
+GUI (Graphical User Interface), adalah antarmuka pada sistem operasi atau komputer yang menggunakan menu grafis agar mempermudah para pengguna-nya untuk berinteraksi dengan komputer atau sistem operasi.
+
+Dalam pemrograman GUI terdapat beberapa bagian yang harus dilakukan yaitu:
+1. Membuat windows utama
+2. Menentukan komponen-komponen pendukung program
+3. Menentukan tata letak layout agar nantinya semua komponen – komponen yang sudah
+dipersiapkan bisa diaatur sedemikian rupa
+4. Event Handling dari sebuah aktivitas, seperti penekanan button, check box dan lain-lain
 
 ## Percobaan
 
@@ -15,105 +23,36 @@ textarea, menu, serta table;
 
 ##### JFrame Hello GUI
 
-![contoh screenshot](img/p1employeefull.png)
+![contoh screenshot](img/p1hellofull.png)
 
-![contoh screenshot](img/p1employee.png)
+![contoh screenshot](img/p1hello.png)
 
-link kode program Employee.java : [Employee.java](../../src/10_Polimorfisme/Employee1841720099Rafi.java)
-
-##### Interface *Payable*
-
-![contoh screenshot](img/p1ipayablefull.png)
-
-![contoh screenshot](img/p1ipayable.png)
-
-link kode program IPayable.java : [IPayable.java](../../src/10_Polimorfisme/IPayable1841720099Rafi.java)
-
-##### Class InternshipEmployee
-
-![contoh screenshot](img/p1internfull.png)
-
-![contoh screenshot](img/p1intern.png)
-
-link kode program InternshipEmployee.java : [InternshipEmployee.java](../../src/10_Polimorfisme/InternshipEmployee1841720099Rafi.java)
-
-##### Class PermanentEmployee
-
-![contoh screenshot](img/p1permanentfull.png)
-
-![contoh screenshot](img/p1permanent.png)
-
-link kode program PermanentEmployee.java : [PermanentEmployee.java](../../src/10_Polimorfisme/PermanentEmployee1841720099Rafi.java)
-
-##### Class ElectricityBill
-
-![contoh screenshot](img/p1ebillfull1.png)
-
-![contoh screenshot](img/p1ebillfull2.png)
-
-![contoh screenshot](img/p1ebill1.png)
-
-![contoh screenshot](img/p1ebill2.png)
-
-link kode program ElectricityBill.java : [Electricity.java](../../src/10_Polimorfisme/ElectricityBill1841720099Rafi.java)
-
-##### Main Tester 1
-
-![contoh screenshot](img/p1mainfull.png)
-
-![contoh screenshot](img/p1main.png)
-
-link kode program ElectricityBill.java : [Electricity.java](../../src/10_Polimorfisme/Tester11841720099Rafi.java)
+link kode program HelloGUI.java : [HelloGUI.java](../../src/11_GUI/HelloGui1841720099Rafi.java)
 
 ##### Hasil
 
 ![contoh screenshot](img/p1hasil.png)
 
-
-#### Pertanyaan
-
-1. Class apa sajakah yang merupakan turunan dari class Employee?
-   
-        Terdapat 2 Class turunan, yaitu Class InternshipEmployee dan PermanentEmployee
-    
-2. Class apa sajakah yang implements ke interface Payable?
-
-        Class PermanentEmployee dan ElectricityBill
-
-3. Perhatikan class Tester1, baris ke-10 dan 11. Mengapa e, bisa diisi dengan objek pEmp (merupakan objek dari class PermanentEmployee) dan objek iEmp (merupakan objek dari class InternshipEmploye) ?
-
-        Karena InternshipEmployee dan PermanentEmployee sama - sama meng- extend dari Class Employee 
-
-4. Perhatikan class Tester1, baris ke-12 dan 13. Mengapa p, bisa diisi
-dengan objek pEmp (merupakan objek dari class
-PermanentEmployee) dan objek eBill (merupakan objek dari class
-ElectricityBill) ?
-
-        Karena ElectricityBill dan PermanentEmployee sama - sama mengimplentasi dari class Payable
-
-5. Coba tambahkan sintaks:
-   
-    p = iEmp;
-
-    e = eBill;
-
-    pada baris 14 dan 15 (baris terakhir dalam method main) ! Apa yang menyebabkan error?
-
-    karena iEmp tidak mengimplementasi Interface Payable dan eBill tidak mengextend class Employee
-
-6. Ambil kesimpulan tentang konsep/bentuk dasar polimorfisme!
-
-    Polimorfisme merupakan kemampuan suatu objek untuk memiliki banyak bentuk. Ketika ada suatu objek yang dideklarasikan dari super class, maka objek tersebut bisa diinstansiasi sebagai objek dari sub class.
          
-### Percobaan 2
+### Percobaan 2 MyInputForm
 
-##### Main Tester 2
+##### JFrame MyInputForm
 
-![contoh screenshot](img/p2mainfull.png)
+![contoh screenshot](img/p2input1full.png)
 
-![contoh screenshot](img/p2main.png)
+![contoh screenshot](img/p2input2full.png)
 
-link kode program Main.java : [Main.java](../../src/10_Polimorfisme/Tester21841720099Rafi.java)
+![contoh screenshot](img/p2input3full.png)
+
+![contoh screenshot](img/p2input1.png)
+
+![contoh screenshot](img/p2input2.png)
+
+![contoh screenshot](img/p2input3.png)
+
+![contoh screenshot](img/p2input4.png)
+
+link kode program MyInputForm.java : [MyInputForm.java](../../src/11_GUI/MyInputForm1841720099Rafi.java)
 
 ##### Hasil
 
@@ -122,171 +61,207 @@ link kode program Main.java : [Main.java](../../src/10_Polimorfisme/Tester218417
 
 #### Pertanyaan
 
-1. Perhatikan class Tester2 di atas, mengapa pemanggilan e.getEmployeeInfo() pada baris 8 dan pEmp.getEmployeeInfo() pada baris 10 menghasilkan hasil sama?
+1.Modifikasi kode program dengan menambahkan JButton baru untuk melakukan fungsi perhitungan penambahan, sehingga ketika button di klik (event click) maka akan menampilkan hasil penambahan dari nilai A dan B
 
-        Karena objek e meng- override method yang ada pada pEmp, sehingga method yang berjalan adalah method pada Class PermanentEmployee
+        Dengan menambahkan class baru di dalam class CreateButton dan membuat listener dari class yang telah dibuat 
 
-2. Mengapa pemanggilan method e.getEmployeeInfo() disebut sebagai pemanggilan method virtual (virtual method invication), sedangkan pEmp.getEmployeeInfo() tidak?
+``` java
+
+    class Perkalian implements ActionListener{
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int a = Integer.valueOf(aField.getText());
+                int b = Integer.valueOf(bField.getText());
+                int c = a+b;
+                cLabel.setText("Hasil  : "+c);
+            }
+            
+        }
+        ActionListener listener = new AddInterestListener();
+        ActionListener listener1 = new Perkalian();
+        button.addActionListener(listener);
+        button1.addActionListener(listener1);
+    
+```     
+
+### Percobaan 3 Manajemen Layout
+
+##### JFrame Border
+
+![contoh screenshot](img/p3borderfull.png)
+
+![contoh screenshot](img/p3border.png)
+
+link kode program Border.java : [Border.java](../../src/11_GUI/Border1841720099Rafi.java)
+
+##### JFrame Box
+
+![contoh screenshot](img/p3boxfull.png)
+
+![contoh screenshot](img/p3box.png)
+
+link kode program Box.java : [Box.java](../../src/11_GUI/Box1841720099Rafi.java)
+
+##### JFrame Grid
+
+![contoh screenshot](img/p3gridfull.png)
+
+![contoh screenshot](img/p3grid.png)
+
+link kode program Grid.java : [Grid.java](../../src/11_GUI/Grid1841720099Rafi.java)
+
+#### Main Layout
+
+![contoh screenshot](img/p3layoutfull.png)
+
+![contoh screenshot](img/p3layout.png)
+
+link kode program LayoutGUI.java : [LayoutGUI.java](../../src/11_GUI/LayoutGUI1841720099Rafi.java)
+
+#### Hasil
+
+1. Layout Border
+
+![contoh screenshot](img/p3hasilborder.png)
+
+2. Layout Box
    
-        Karena objek e berjalan pada JVM yang berbeda dengan objek pEmp
+![contoh screenshot](img/p3hasilbox.png)
+   
+3. Layout Grid
 
-3. Jadi apakah yang dimaksud dari virtual method invocation? Mengapa disebut virtual?
-
-        Virtual Method invocation terjadi ketika ada pemanggilan overriding method dari suatu objek polimorfisme. Disebut virtual karena antara method yang dikenali oleh compiler dan method yang dijalankan oleh JVM berbeda
-
-
-### Percobaan 3
-
-##### Main Tester 3
-
-![contoh screenshot](img/p3mainfull.png)
-
-![contoh screenshot](img/p3main.png)
-
-link kode program Main.java : [Main.java](../../src/10_Polimorfisme/Tester31841720099Rafi.java)
-
+![contoh screenshot](img/p3hasilgrid.png)
 
 #### Pertanyaan
 
-1. Perhatikan array e pada baris ke-8, mengapa ia bisa diisi dengan objek-objek dengan tipe yang berbeda, yaitu objek pEmp (objek dari PermanentEmployee) dan objek iEmp (objek dari InternshipEmployee) ?
+1. Apa perbedaan dari Grid Layout, Box Layout dan Border Layout?
    
-        Karena pada kedua Class tersebut sama sama meng-extend Class Employee
+        Perbedaan dari grid layout, box layout dan border layout terdapat di tata letak dari tiap tiap layout
 
-2. Perhatikan juga baris ke-9, mengapa array p juga biisi dengan objek - objek dengan tipe yang berbeda, yaitu objek pEmp (objek dari PermanentEmployee) dan objek eBill (objek dari ElectricityBilling) ?
+2. Apakah fungsi dari masing-masing kode berikut?
+
+
+![contoh screenshot](img/p3soal2.png)
             
-        Karena pada kedua Class tersebut sama sama mengimplementasikan Interface Payable
+        memanggil Jframe tiap jenis layout yang telah dibuat sebelumnya, yaitu border,box dan grid
         
 
-3. Perhatikan baris ke-10, mengapa terjadi error?
-
-        Karena Objek eBill tidak meng-extend Class Employee
 
 ### Percobaan 4
 
-##### Class Owner
+##### Design GUI Interface
 
-![contoh screenshot](img/p4ownerfull.png)
+![contoh screenshot](img/p4designfull.png)
 
-![contoh screenshot](img/p4owner.png)
+![contoh screenshot](img/p4design.png)
 
-link kode program Owner.java : [Owner.java](../../src/10_Polimorfisme/Owner1841720099Rafi.java)
 
-##### Main Tester 4
+##### Deklarasi Variable
 
-![contoh screenshot](img/p4mainfull.png)
+![contoh screenshot](img/p4deklarasifull.png)
 
-![contoh screenshot](img/p4main.png)
+![contoh screenshot](img/p4deklarasi.png)
+
+##### Button Tampil
+
+![contoh screenshot](img/p4btntampilfull.png)
+
+![contoh screenshot](img/p4btntampil.png)
+
+##### Button Clear
+
+![contoh screenshot](img/p4btnclearfull.png)
+
+![contoh screenshot](img/p4btnclear.png)
 
 ##### Hasil
 
 ![contoh screenshot](img/p4hasil.png)
 
-link kode program Main.java : [Main.java](../../src/10_Polimorfisme/Tester41841720099Rafi.java)
+link kode program Swing.java : [Swing.java](../../src/11_GUI/Swing1841720099Rafi.java)
 
+### Percobaan 5
 
-#### Pertanyaan
+##### Design GUI Interface
 
-1. Perhatikan class Tester4 baris ke-7 dan baris ke-11, mengapa pemanggilan ow.pay(eBill) dan ow.pay(pEmp) bisa dilakukan, padahal jika diperhatikan method pay() yang ada di dalam class Owner memiliki argument/parameter bertipe Payable? Jika diperhatikan lebih detil eBill merupakan objek dari ElectricityBill dan pEmp merupakan objek dari PermanentEmployee?
-   
-        Karena pada kedua Class tersebut sama sama mengimplementasikan Interface Payable
+###### Tab 1
 
-2. Jadi apakah tujuan membuat argument bertipe Payable pada method pay() yang ada di dalam class Owner?
-   
-        Agar semua Class yang mengimplementasikan interface Payable dapat dijadikan parameter pada method di class Owner
-        
+![contoh screenshot](img/p5design1.png)
 
-3. Coba pada baris terakhir method main() yang ada di dalam class Tester4 ditambahkan perintah ow.pay(iEmp);
+###### Tab 2
 
-        Karena Class InternshipEmployee tidak mengimplementasikan Interface Payable 
+![contoh screenshot](img/p5design2.png)
 
-4.  Perhatikan class Owner, diperlukan untuk apakah sintaks p instanceof ElectricityBill pada baris ke-6 ?
-   
-        Untuk mengecek apakah objek p merupakan hasil instansiasi dari class ElectricityBill 
+###### Tab 3
 
-5.  Perhatikan kembali class Owner baris ke-7, untuk apakah casting objek disana (ElectricityBill eb = (ElectricityBill) p) diperlukan ? Mengapa objek p yang bertipe Payable harus di-casting ke dalam objek eb yang bertipe ElectricityBill ?
+![contoh screenshot](img/p5design3.png)
 
-        Agar dapat memanggil method yang ada pada Class ElectricityBill
+##### Tree
 
+![contoh screenshot](img/p5treefull.png)
 
-
-### Tugas
-
-##### Class Diagram
-
-![contoh screenshot](img/t1uml.png)
-
-##### Interface *Destroyable*
-
-![contoh screenshot](img/t1idestroyfull.png)
-
-![contoh screenshot](img/t1idestroy.png)
-
-link kode program IDestroyable.java : [IDestroyable.java](../../src/10_Polimorfisme/IDestroyable1841720099Rafi.java)
-
-##### Class Zombie
-
-![contoh screenshot](img/t1zombiefull.png)
-
-![contoh screenshot](img/t1zombie.png)
-
-link kode program Zombie.java : [Zombie.java](../../src/10_Polimorfisme/Zombie1841720099Rafi.java)
-
-##### Class WalkingZombie
-
-![contoh screenshot](img/t1wzombiefull1.png)
-
-![contoh screenshot](img/t1wzombiefull2.png)
-
-![contoh screenshot](img/t1wzombie1.png)
-
-![contoh screenshot](img/t1wzombie2.png)
-
-link kode program WalkingZombie.java : [WalkingZombie.java](../../src/10_Polimorfisme/WalkingZombie1841720099Rafi.java)
-
-##### Class JumpingZombie
-
-![contoh screenshot](img/t1jzombiefull1.png)
-
-![contoh screenshot](img/t1jzombiefull2.png)
-
-![contoh screenshot](img/t1jzombie1.png)
-
-![contoh screenshot](img/t1jzombie2.png)
-
-link kode program JumpingZombie.java : [JumpingZombie.java](../../src/10_Polimorfisme/JumpingZombie1841720099Rafi.java)
-
-##### Class Plant
-
-![contoh screenshot](img/t1plantfull.png)
-
-![contoh screenshot](img/t1plant.png)
-
-link kode program Plant.java : [PLant.java](../../src/10_Polimorfisme/Plant1841720099Rafi.java)
-
-##### Class Barrier
-
-![contoh screenshot](img/t1barrierfull.png)
-
-![contoh screenshot](img/t1barrier.png)
-
-link kode program Barrier.java : [Barrier.java](../../src/10_Polimorfisme/Barrier1841720099Rafi.java)
-
-##### Main 
-
-![contoh screenshot](img/t1mainfull.png)
-
-![contoh screenshot](img/t1main.png)
+![contoh screenshot](img/p5tree.png)
 
 ##### Hasil
 
-![contoh screenshot](img/t1hasil.png)
+![contoh screenshot](img/p5hasil.png)
+
+link kode program Swing2.java : [Swing2.java](../../src/11_GUI/Swing21841720099Rafi.java)
+
+#### Pertanyaan
+
+1. Apa kegunaan komponen swing JTabPane, JTtree, pada percobaan 5?
+   
+        Perbedaan dari grid layout, box layout dan border layout terdapat di tata letak dari tiap tiap layout
+
+2. Modifikasi program untuk menambahkan komponen JTable pada tab Halaman 1 dan tab Halaman 2
+        
+![contoh screenshot](img/p5tablefull.png)
+
+![contoh screenshot](img/p5table.png)
+
+![contoh screenshot](img/p5hasiltable.png)
+
+### Tugas
+
+##### JForm Kalkulator
+
+##### Desain Kalkulator
+
+![contoh screenshot](img/t1designfull.png)
+
+![contoh screenshot](img/t1design.png)
+
+##### Source Code Kalkulator
+
+![contoh screenshot](img/t1kalkulatorfull1.png)
+
+![contoh screenshot](img/t1kalkulatorfull2.png)
+
+![contoh screenshot](img/t1kalkulatorfull3.png)
+
+![contoh screenshot](img/t1kalkulatorfull4.png)
+
+![contoh screenshot](img/t1kalkulator1.png)
+
+![contoh screenshot](img/t1kalkulator2.png)
+
+![contoh screenshot](img/t1kalkulator3.png)
+
+![contoh screenshot](img/t1kalkulator4.png)
+
+
+##### Hasil
+
+![contoh screenshot](img/t1kalkulatorhasil.png)
 
 link kode program Main.java : [Main.java](../../src/10_Polimorfisme/TesterT1841720099Rafi.java)
 
 
 ## Kesimpulan
 
-Dari praktikum diatas kita diajarkan cara penerapan dari polimorfisme yang akan menghemat penulisan kode untuk meminimalisir adanya pembuatan method yang sama berulang kali
+Dari praktikum diatas kita diajarkan cara penerapan dari GUI yang memudahkan user untuk menggunakan sebuah program, GUI java terbagi menjadi 2 yaitu AWT dan Swing dengan komponen AWT yang komponennya diawali huruf J
 
 ## Pernyataan Diri
 
