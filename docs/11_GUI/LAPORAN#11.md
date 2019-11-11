@@ -256,7 +256,7 @@ link kode program Swing2.java : [Swing2.java](../../src/11_GUI/Swing21841720099R
 
 ![contoh screenshot](img/t1kalkulatorhasil.png)
 
-link kode program Main.java : [Main.java](../../src/10_Polimorfisme/TesterT1841720099Rafi.java)
+link kode program Kalkulator.java : [Kalkulator.java](../../src/11_GUI/Kalkulator1841720099Rafi.java)
 
 
 ## Kesimpulan
