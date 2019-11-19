@@ -45,11 +45,20 @@ record management
 
 ![contoh screenshot](img/p1hash.png)
 
-link kode program HelloGUI.java : [HelloGUI.java](../../src/11_GUI/HelloGui1841720099Rafi.java)
+link kode program CobaHashSet.java : [CobaHashSet.java](../../src/12_Java_API/DemoHashSet1841720099Rafi.java)
 
 ##### Hasil
 
 ![contoh screenshot](img/p1hasil.png)
+
+#### Pertanyaan
+1. Apakah fungsi import java.util.*; pada program diatas!
+2. Pada baris program keberapakah yang berfungsi untuk menciptakan object HashSet?
+3. Apakah fungsi potongan program dibawah ini pada percobaan 1!
+4. Tambahkan set.add(“Malang”); kemudian jalankan program! Amati hasilnya dan jelaskan
+mengapa terjadi error!
+5. Jelaskan fungsi potongan program dibawah ini pada percobaan 1!
+   
 
          
 ### Percobaan 2 MyInputForm
