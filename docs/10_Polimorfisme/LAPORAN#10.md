@@ -1,4 +1,4 @@
-# Laporan Praktikum #9 - POLIMORFISME
+# Laporan Praktikum #10 - POLIMORFISME
 
 ## Kompetensi
 Setelah melakukan percobaan pada jobsheet ini, diharapkan mahasiswa
