@@ -252,18 +252,22 @@ link kode program TampilGUI.java : [TampilGUI.java](../../src/12_Java_API/Tampil
         pertama menghapus semua element yang berada di tabel lalu membuka koneksi ke database, setelah itu membuat query untuk menampilkan data dari tabel anggota yaitu "select * from anggota", query di jalankan, setelah query dijalankan data akan ditampilkan dengan menggunakan perulangan sesuai dengan tabel yang telah disediakan, menutup koneksi database, jika terjadi error atau kesalahan maka pesan dialog akan ditampilkan serta bagian yang error tersebut
     
         
+10. Buat fungsi untuk merefresh sehingga data yang baru dapat ditampilkan pada tabel 2.
+    
+![contoh screenshot](img/p5refresh.png)
 
-###### 
+        dengan menambahkan method ambil_data kedalam Button Action Refresh
 
 ##### Hasil
 
 ![contoh screenshot](img/p5hasil.png)
 
+
 link kode program Swing2.java : [Swing2.java](../../src/11_GUI/Swing21841720099Rafi.java)
 
 ## Kesimpulan
 
-Dari praktikum diatas kita diajarkan cara penerapan dari GUI yang memudahkan user untuk menggunakan sebuah program, GUI java terbagi menjadi 2 yaitu AWT dan Swing dengan komponen AWT yang komponennya diawali huruf J
+Dari praktikum diatas kita diajarkan cara penerapan dari Java API yang memudahkan programmer dalam membuat suatu program, serta penerapan dari GUI yang terkoneksi ke database agar data bisa disimpan ke dalam database agar ketika program di tutup dan dijalankan kembali, data yang telah diinputkan tidak hilang
 
 ## Pernyataan Diri
 
