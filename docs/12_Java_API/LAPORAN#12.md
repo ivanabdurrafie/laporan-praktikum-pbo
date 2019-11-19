@@ -53,33 +53,42 @@ link kode program CobaHashSet.java : [CobaHashSet.java](../../src/12_Java_API/De
 
 #### Pertanyaan
 1. Apakah fungsi import java.util.*; pada program diatas!
+   
+        fungsi tersebut digunakan untuk mengimport semua library java util
+
 2. Pada baris program keberapakah yang berfungsi untuk menciptakan object HashSet?
+   
+   ``` java
+   Set mSetCity = new HashSet();
+   ```
+
 3. Apakah fungsi potongan program dibawah ini pada percobaan 1!
-4. Tambahkan set.add(“Malang”); kemudian jalankan program! Amati hasilnya dan jelaskan
-mengapa terjadi error!
+   
+   ![contoh screenshot](img/p1soal3.png)
+
+        Untuk menambahkan data pada hash set
+
+4. Tambahkan set.add(“Malang”); kemudian jalankan program! Amati hasilnya dan jelaskan mengapa terjadi error!
+        
+        Data hanya akan ditampilkan 1, jadi data "Malang" yang berada di bawah tidak akan ditampilkan 
+
 5. Jelaskan fungsi potongan program dibawah ini pada percobaan 1!
+   
+   ![contoh screenshot](img/p1soal5.png)
+
+        Menampilkan seluruh data dengan menggunakan perulangan dan Iterator
    
 
          
-### Percobaan 2 MyInputForm
+### Percobaan 2 List
 
-##### JFrame MyInputForm
+##### Source code ArrayList
 
-![contoh screenshot](img/p2input1full.png)
+![contoh screenshot](img/p2arraylistfull.png)
 
-![contoh screenshot](img/p2input2full.png)
+![contoh screenshot](img/p2arraylist.png)
 
-![contoh screenshot](img/p2input3full.png)
-
-![contoh screenshot](img/p2input1.png)
-
-![contoh screenshot](img/p2input2.png)
-
-![contoh screenshot](img/p2input3.png)
-
-![contoh screenshot](img/p2input4.png)
-
-link kode program MyInputForm.java : [MyInputForm.java](../../src/11_GUI/MyInputForm1841720099Rafi.java)
+link kode program CobaArrayList.java : [CobaArrayList.java](../../src/12_Java_API/CobaArrayList1841720099Rafi.java)
 
 ##### Hasil
 
@@ -88,203 +97,169 @@ link kode program MyInputForm.java : [MyInputForm.java](../../src/11_GUI/MyInput
 
 #### Pertanyaan
 
-1.Modifikasi kode program dengan menambahkan JButton baru untuk melakukan fungsi perhitungan penambahan, sehingga ketika button di klik (event click) maka akan menampilkan hasil penambahan dari nilai A dan B
+1. Apakah fungsi potongan program dibawah ini!
+   
+   ![contoh screenshot](img/p2soal1.png)
 
-        Dengan menambahkan class baru di dalam class CreateButton dan membuat listener dari class yang telah dibuat 
+       baris pertama untuk menampilkan seluruh data, untuk baris kedua dan ketiga berfungsi untuk menampilkan data sesuai index yang diinginkan 
 
-``` java
+2. Ganti potongan program pada soal no 1 menjadi sebagai berikut
 
-    class Perkalian implements ActionListener{
+   ![contoh screenshot](img/p2soal2.png)
+Kemudian jalankan program tersebut!
 
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                int a = Integer.valueOf(aField.getText());
-                int b = Integer.valueOf(bField.getText());
-                int c = a+b;
-                cLabel.setText("Hasil  : "+c);
-            }
-            
-        }
-        ActionListener listener = new AddInterestListener();
-        ActionListener listener1 = new Perkalian();
-        button.addActionListener(listener);
-        button1.addActionListener(listener1);
-    
-```     
+3. Jelaskan perbedaan menampilkan data pada ArrayList menggunakan potongan program pada
+soal no 1 dan no 2!
 
-### Percobaan 3 Manajemen Layout
+        perbedaan terlihat pada hasil output data, jika menggunakan potongan soal 1 maka hasilnya akan menampilkan data sesuai index yang dipilih, sedangkan jika menggunakan potongan soal 2 maka hasilnya akan menampilkan seluruh data pada arraylist
 
-##### JFrame Border
 
-![contoh screenshot](img/p3borderfull.png)
+### Percobaan 3 Map
 
-![contoh screenshot](img/p3border.png)
+##### Source Code HashMap       
 
-link kode program Border.java : [Border.java](../../src/11_GUI/Border1841720099Rafi.java)
+![contoh screenshot](img/p3hashmapfull.png)
 
-##### JFrame Box
+![contoh screenshot](img/p3hashmap.png)
 
-![contoh screenshot](img/p3boxfull.png)
-
-![contoh screenshot](img/p3box.png)
-
-link kode program Box.java : [Box.java](../../src/11_GUI/Box1841720099Rafi.java)
-
-##### JFrame Grid
-
-![contoh screenshot](img/p3gridfull.png)
-
-![contoh screenshot](img/p3grid.png)
-
-link kode program Grid.java : [Grid.java](../../src/11_GUI/Grid1841720099Rafi.java)
-
-#### Main Layout
-
-![contoh screenshot](img/p3layoutfull.png)
-
-![contoh screenshot](img/p3layout.png)
-
-link kode program LayoutGUI.java : [LayoutGUI.java](../../src/11_GUI/LayoutGUI1841720099Rafi.java)
+link kode program DemoHashMap.java : [DemoHashMap.java](../../src/12_Java_API/DemoHashMap1841720099Rafi.java)
 
 #### Hasil
 
-1. Layout Border
-
-![contoh screenshot](img/p3hasilborder.png)
-
-2. Layout Box
-   
-![contoh screenshot](img/p3hasilbox.png)
-   
-3. Layout Grid
-
-![contoh screenshot](img/p3hasilgrid.png)
+![contoh screenshot](img/p3hasil.png)
 
 #### Pertanyaan
 
-1. Apa perbedaan dari Grid Layout, Box Layout dan Border Layout?
+1. Jelaskan fungsi hMapItem.put("1","Biskuit") pada program!
    
-        Perbedaan dari grid layout, box layout dan border layout terdapat di tata letak dari tiap tiap layout
+        menambahkan data dengan key 1 dengan value biskuit
 
-2. Apakah fungsi dari masing-masing kode berikut?
-
-
-![contoh screenshot](img/p3soal2.png)
+2. Jelaskan fungsi hMapItem.size() pada program!
             
-        memanggil Jframe tiap jenis layout yang telah dibuat sebelumnya, yaitu border,box dan grid
+        melihat jumlah data yang sudah dimasukkan pada hashmap
         
+3. Jelaskan fungsi hMapItem.remove("1") pada program!
+        
+        menghapus data dari hashmap dengan index atau key 1
 
+4. Jelaskan fungsi hMapItem.clear() pada program!
 
-### Percobaan 4
+        menghapus semua data atau element dari hashmap
 
-##### Design GUI Interface
+5. Tambahkan kode program yang di blok pada program yang sudah anda buat!
+![contoh screenshot](img/p3soal5.png)
+6. Jalankan program dan amati apa yang terjadi!
+7. Apakah perbedaan program sebelumnya dan setelah ditambahkan kode program pada soal no 5 diatas? Jelaskan!
+   
+        setelah ditambahkan kode program diatas semua data atau element yang berada di hashmap akan ditampilkan
+   
+
+### Percobaan 4 (Implementasi ArrayList dalam GUI)
+
+##### Design
 
 ![contoh screenshot](img/p4designfull.png)
 
 ![contoh screenshot](img/p4design.png)
 
+##### Mahasiswa
 
-##### Deklarasi Variable
+![contoh screenshot](img/p4mahasiswafull.png)
 
-![contoh screenshot](img/p4deklarasifull.png)
+![contoh screenshot](img/p4mahasiswa.png)
 
-![contoh screenshot](img/p4deklarasi.png)
+link kode program Mahasiswa.java : [Mahasiswa.java](../../src/12_Java_API/Mahasiswa1841720099Rafi.java)
 
-##### Button Tampil
 
-![contoh screenshot](img/p4btntampilfull.png)
+##### InputData
 
-![contoh screenshot](img/p4btntampil.png)
+![contoh screenshot](img/p4inputdatafull.png)
 
-##### Button Clear
+![contoh screenshot](img/p4inputdata.png)
 
-![contoh screenshot](img/p4btnclearfull.png)
+link kode program InputData.java : [InputData.java](../../src/12_Java_API/InputData1841720099Rafi.java)
 
-![contoh screenshot](img/p4btnclear.png)
+##### GUI
+
+![contoh screenshot](img/p4guifull1.png)
+
+![contoh screenshot](img/p4guifull2.png)
+
+![contoh screenshot](img/p4gui1.png)
+
+![contoh screenshot](img/p4gui2.png)
+
+link kode program TampilGUI.java : [TampilGUI.java](../../src/12_Java_API/TampilGui1841720099Rafi.java)
 
 ##### Hasil
 
 ![contoh screenshot](img/p4hasil.png)
 
-link kode program Swing.java : [Swing.java](../../src/11_GUI/Swing1841720099Rafi.java)
-
 ### Percobaan 5
 
 ##### Design GUI Interface
 
-###### Tab 1
+![contoh screenshot](img/p5designfull.png)
 
-![contoh screenshot](img/p5design1.png)
+![contoh screenshot](img/p5design.png)
 
-###### Tab 2
+##### Source Code
 
-![contoh screenshot](img/p5design2.png)
+![contoh screenshot](img/p5sourcefull1.png)
 
-###### Tab 3
+![contoh screenshot](img/p5sourcefull2.png)
 
-![contoh screenshot](img/p5design3.png)
+![contoh screenshot](img/p5sourcefull3.png)
 
-##### Tree
+###### Menambahkan Dependency msyql-connector-java
 
-![contoh screenshot](img/p5treefull.png)
+![contoh screenshot](img/p5tambah.png)
 
-![contoh screenshot](img/p5tree.png)
+###### import library java
+
+![contoh screenshot](img/p5import.png)
+
+###### method buka_koneksi
+
+![contoh screenshot](img/p5koneksi.png)
+
+###### Konstruktor
+
+![contoh screenshot](img/p5konstruktor.png)
+
+###### Button Tambah Data
+
+![contoh screenshot](img/p5add.png)
+
+###### Pertanyaan
+
+5. Setelah menambah code pada action button klik, coba jalankan program dan tambahkan data. Apakah program berhasil menambahkan data? Jika tidak apakah penyebabnya.
+        
+        Ya, program dapat menambahkan data
+
+6. Jelaskan maksud source code untuk melakukan insert data diatas?
+
+        yang pertama dilakukan adalah memanggil method buka_koneksi() setelah itu mendeklarasikan query untuk menambah data ke tabel anggota lalu melakukan try catch untuk menjalankan query diatas, jika query benar maka data akan terupdate dan mendapatkan pesan dialog "Data berhasil ditambahkan" dan menutup koneksi ke database jika gagal, maka akan ditampilkan dimana letak error tersebut
+
+###### method Ambil_data
+
+![contoh screenshot](img/p5ambildata.png)
+
+###### Pertanyaan
+
+9. Jelaskan alur dari method ambil_data_tabel?
+    
+        pertama menghapus semua element yang berada di tabel lalu membuka koneksi ke database, setelah itu membuat query untuk menampilkan data dari tabel anggota yaitu "select * from anggota", query di jalankan, setelah query dijalankan data akan ditampilkan dengan menggunakan perulangan sesuai dengan tabel yang telah disediakan, menutup koneksi database, jika terjadi error atau kesalahan maka pesan dialog akan ditampilkan serta bagian yang error tersebut
+    
+        
+
+###### 
 
 ##### Hasil
 
 ![contoh screenshot](img/p5hasil.png)
 
 link kode program Swing2.java : [Swing2.java](../../src/11_GUI/Swing21841720099Rafi.java)
-
-#### Pertanyaan
-
-1. Apa kegunaan komponen swing JTabPane, JTtree, pada percobaan 5?
-   
-        Perbedaan dari grid layout, box layout dan border layout terdapat di tata letak dari tiap tiap layout
-
-2. Modifikasi program untuk menambahkan komponen JTable pada tab Halaman 1 dan tab Halaman 2
-        
-![contoh screenshot](img/p5tablefull.png)
-
-![contoh screenshot](img/p5table.png)
-
-![contoh screenshot](img/p5hasiltable.png)
-
-### Tugas
-
-##### JForm Kalkulator
-
-##### Desain Kalkulator
-
-![contoh screenshot](img/t1designfull.png)
-
-![contoh screenshot](img/t1design.png)
-
-##### Source Code Kalkulator
-
-![contoh screenshot](img/t1kalkulatorfull1.png)
-
-![contoh screenshot](img/t1kalkulatorfull2.png)
-
-![contoh screenshot](img/t1kalkulatorfull3.png)
-
-![contoh screenshot](img/t1kalkulatorfull4.png)
-
-![contoh screenshot](img/t1kalkulator1.png)
-
-![contoh screenshot](img/t1kalkulator2.png)
-
-![contoh screenshot](img/t1kalkulator3.png)
-
-![contoh screenshot](img/t1kalkulator4.png)
-
-
-##### Hasil
-
-![contoh screenshot](img/t1kalkulatorhasil.png)
-
-link kode program Kalkulator.java : [Kalkulator.java](../../src/11_GUI/Kalkulator1841720099Rafi.java)
-
 
 ## Kesimpulan
 
