@@ -263,7 +263,7 @@ link kode program TampilGUI.java : [TampilGUI.java](../../src/12_Java_API/Tampil
 ![contoh screenshot](img/p5hasil.png)
 
 
-link kode program Swing2.java : [Swing2.java](../../src/11_GUI/Swing21841720099Rafi.java)
+link kode program FormKoneksi.java : [FormKoneksi.java](../../src/12_Java_API/FormKoneksi1841720099Rafi.java)
 
 ## Kesimpulan
 
