@@ -80,7 +80,7 @@ Membuat Class Anggota
 
 ![contoh screenshot](img/p6anggota.png)
 
-link kode program Anggota.form : [Anggota.form](../../src/14_GUI_dan_Database/backend/Anggota1841720099Rafi.java)
+link kode program Anggota.java : [Anggota.java](../../src/14_GUI_dan_Database/backend/Anggota1841720099Rafi.java)
 
 
 Membuat Class TestBackendAnggota
@@ -112,39 +112,52 @@ link kode program FormKategori.form : [FormKategori.form](../../src/14_GUI_dan_D
 
 ### Percobaan 7 Buku
 
+![contoh screenshot](img/uibuku.png)
+
 Membuat Class Buku
 
-![contoh screenshot](img/p6anggota.png)
+![contoh screenshot](img/p7buku.png)
 
-link kode program Anggota.form : [Anggota.form](../../src/14_GUI_dan_Database/backend/Anggota1841720099Rafi.java)
-
-
-Membuat Class TestBackendAnggota
-
-![contoh screenshot](img/p6test.png)
-
-![contoh screenshot](img/p6hasi.png)
-
-link kode program TestBackendAnggota.form : [TestBackendAnggota.form](../../src/14_GUI_dan_Database/frontend/TestBackendAnggota1841720099Rafi.java)
-
-Membuat Class Form Anggota
-
-![contoh screenshot](img/p6formanggota.png)
-
-link kode program FormAnggota.form : [FormKategori.form](../../src/14_GUI_dan_Database/frontend/FrmAnggota1841720099Rafi.form)
-
-link kode program FormAnggota.java : [FormKategori.java](../../src/14_GUI_dan_Database/frontend/FrmAnggota1841720099Rafi.java)
+link kode program Buku.java : [buku.java](../../src/14_GUI_dan_Database/backend/Buku1841720099Rafi.java)
 
 
+Membuat Class TestBackendBuku
 
-##### Hasil
+![contoh screenshot](img/p7testbuku.png)
 
-![contoh screenshot](img/p6gui.png)
+link kode program TestBackendBuku.java : [TestBackendBuku.java](../../src/14_GUI_dan_Database/frontend/TestBackendBuku1841720099Rafi.java)
 
+Membuat Class Form Buku
 
-link kode program FormKategori.java : [FormKategori.java](../../src/14_GUI_dan_Database/frontend/FrmKategori1841720099Rafi.java)
+![contoh screenshot](img/p7formbuku.png)
 
-link kode program FormKategori.form : [FormKategori.form](../../src/14_GUI_dan_Database/frontend/FrmKategori1841720099Rafi.form)
+link kode program FormBuku.form : [FormBuku.form](../../src/14_GUI_dan_Database/frontend/FrmAnggota1841720099Rafi.form)
+
+link kode program FormBuku.java : [FormBuku.java](../../src/14_GUI_dan_Database/frontend/FrmAnggota1841720099Rafi.java)
+
+### Percobaan 8 Peminjaman
+
+![contoh screenshot](img/uipinjam.png)
+
+Membuat Class Buku
+
+![contoh screenshot](img/p8peminjaman.png)
+
+link kode program peminjaman.java : [peminjaman.java](../../src/14_GUI_dan_Database/backend/Peminjaman1841720099Rafi.java)
+
+Membuat Class TestBackendPeminjaman
+
+![contoh screenshot](img/p8test.png)
+
+link kode program TestBackendPeminjaman.java : [TestBackendPeminjaman.java](../../src/14_GUI_dan_Database/frontend/TestBackendPeminjaman1841720099Rafi.java)
+
+Membuat Class Form Peminjaman
+
+![contoh screenshot](img/p8form.png)
+
+link kode program FormPeminjaman.form : [FormPeminjaman.form](../../src/14_GUI_dan_Database/frontend/FrmAnggota1841720099Rafi.form)
+
+link kode program FormPeminjaman.java : [FormPeminjaman.java](../../src/14_GUI_dan_Database/frontend/FrmAnggota1841720099Rafi.java)
 
 
 
