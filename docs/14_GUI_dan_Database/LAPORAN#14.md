@@ -163,7 +163,7 @@ link kode program FormPeminjaman.java : [FormPeminjaman.java](../../src/14_GUI_d
 
 ## Kesimpulan
 
-Dari praktikum diatas kita diajarkan cara penerapan dari Java API yang memudahkan programmer dalam membuat suatu program, serta penerapan dari GUI yang terkoneksi ke database agar data bisa disimpan ke dalam database agar ketika program di tutup dan dijalankan kembali, data yang telah diinputkan tidak hilang
+Dari praktikum diatas kita diajarkan cara penerapan dari pemisahan backend dan frontend pada java beserta pengaplikasian gui dengan database
 
 ## Pernyataan Diri
 
