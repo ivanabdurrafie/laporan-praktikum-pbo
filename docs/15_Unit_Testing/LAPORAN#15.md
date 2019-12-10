@@ -12,9 +12,8 @@ Setelah menyelesaikan lembar kerja ini mahasiswa diharapkan mampu:
 
 Unit testing adalah sebuah proses yang digunakan untuk melakukan testing terhadap setiap method-method atau komponen yang ada di dalam suatu class apakah method atau komponen tersebut sudah berjalan sesuai dengan diharapkan. Saat melakukan testing kita akan menggunakan library yang bernama JUnit.
 
-## Percobaan
-
-### Percobaan Membuat database
+## Percobaan 1
+Contoh Unit Testing Sederhana untuk mengecheck apakah Output dari sebuah class akan sama seperti yang diharapkan atau tidak
 
 ![contoh screenshot](img/database.png)
          
