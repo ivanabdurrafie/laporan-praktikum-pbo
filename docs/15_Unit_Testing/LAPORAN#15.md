@@ -45,13 +45,54 @@ link kode program MessageProcessorTest.java :
 
 ![contoh screenshot](img/p2hasil.png)
 
+#### Source Code
+
+link kode program Kategori.java : [Kategori.java](../../src/15_Unit_Testing/main/java/backend/Kategori1841720099Rafi.java)
+
+link kode program DBHelper.java : [DBHelper.java](../../src/15_Unit_Testing/main/java/backend/DBHelper1841720099Rafi.java)
+
+link kode program TestBackend.java : [TestBackend.java](../../src/15_Unit_Testing/main/java/backend/TestBackend1841720099Rafi.java)
+
+link kode program FormKategori.java : [FormKategori.java](../../src/15_Unit_Testing/main/java/backend/FrmKategori1841720099Rafi.java)
+
+link kode program FormKategori.form : [FormKategori.form](../../src/15_Unit_Testing/main/java/backend/FrmKategori1841720099Rafi.form)
+
+link kode program KategoriTest.java : [kategoriTest.java](../../src/15_Unit_Testing/test/java/backend/Kategori1841720099RafiTest.java)
+
+link kode program TestRunner.java : [TestRunner.java](../../src/15_Unit_Testing/test/java/unittest/TestRunner1841720099Rafi.java)
+
+##### Pertanyaan
+Apa yang terjadi ketika class Kategori di run?
+
+    Tidak terjadi apa-apa, karena class Kategori tidak memiliki method main.
 
 
+### Tugas
+
+Membuat Test Case untuk Percobaan kedua pada jobsheet 14
+
+
+
+![contoh screenshot](img/tugas.png)
+
+#### hasil
+
+![contoh screenshot](img/tugashasil.png)
+
+#### Source Code
+
+link kode program Anggota.java : [Anggota.java](../../src/15_Unit_Testing/main/java/backend/Anggota1841720099Rafi.java)
+
+link kode program DBHelper.java : [DBHelper.java](../../src/15_Unit_Testing/main/java/backend/DBHelper1841720099Rafi.java)
+
+link kode program AnggotaTest.java : [AnggotaTest.java](../../src/15_Unit_Testing/test/java/backend/Anggota1841720099RafiTest.java)
+
+link kode program TestRunner.java : [TestRunner.java](../../src/15_Unit_Testing/test/java/unittest/TestRunner1841720099Rafi.java)
 
 
 ## Kesimpulan
 
-Dari praktikum diatas kita diajarkan cara penerapan dari pemisahan backend dan frontend pada java beserta pengaplikasian gui dengan database
+Dari praktikum diatas kita diajarkan cara penerapan dari unit testing, agar output keluaran yang dihasilkan sesuai dengan apa yang diharapkan sebelumnya
 
 ## Pernyataan Diri
 
